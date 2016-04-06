@@ -1,0 +1,10 @@
+<h1>Create New Message</h1>
+
+<%= simple_form_for @message do |f| %>
+  <%= f.input :body %>
+
+  <%# Updated the following line. You could chose to create a hidden field here, or however you wish to implement this in your view as long as you specify `recipient` as the association or `recipient_id` as the field. %>
+  <%= f.association :recipient, :include_blank => false %>
+
+  <%= f.button :submit, "Send Message", class: "btn btn-secondary" %>
+<% end %>
