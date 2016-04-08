@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   # resources :messages ,only: [:update]
-  get 'message/index'
+   
 
   devise_for :users
+  resources :message
   get "home/index" => "home#index"
+  get "get_inbox" => "message#get_inbox"
+  # get 'message/index' => "message#index"
+  # get "message/new"   => "message#new"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

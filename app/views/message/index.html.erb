@@ -1,10 +1,31 @@
-<h1>Create New Message</h1>
+<h1> VIEW TO ALL MAILS </h1>
+<table>
+  <!-- <tr>
+    <th>TO</th>
+    <th>Subject</th>
+    
+    <th>body</th>
+    <th>file</th>
 
-<%= simple_form_for @message do |f| %>
-  <%= f.input :body %>
+    <th colspan="2"></th>
+  </tr> -->
+  <% @message.each do |message|%>
 
-  <%# Updated the following line. You could chose to create a hidden field here, or however you wish to implement this in your view as long as you specify `recipient` as the association or `recipient_id` as the field. %>
-  <%= f.association :recipient, :include_blank => false %>
+    <tr>
+      <td><%= message.to %></td>
+      <td><%#= message.from %></td> 
+       <td><%= message.subject %></td>
+       <td><%= message.body[0..10].html_safe %></td>
+      <td><%#= message.attachment_url %></td>
+      <td><%#= link_to "Download Attachment", message.attachment_url %></td>
+       <td><%= link_to "Download Attachment", message.attachment_url %></td>
 
-  <%= f.button :submit, "Send Message", class: "btn btn-secondary" %>
-<% end %>
+        <td><%= button_to "Delete",message, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{message.attachment}?" %></td>
+      <td><%= link_to 'view', message_path(message) %></td>
+     
+    </tr>
+  <% end %>
+</table>
+<%= link_to "back",   home_index_path%>
+
+         
