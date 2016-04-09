@@ -1,19 +1,22 @@
 Rails.application.routes.draw do
+ 
+
   mount Ckeditor::Engine => '/ckeditor'
   # resources :messages ,only: [:update]
    
 
   devise_for :users
   resources :message
+  resources :contact
+  get "edit/profile" => "profile#edit"
+  put "/profiles" =>"profile#update"
+  #resources :profile ,only:[:edit,:update]
+   # => post 'user/review' => 'cart#review_create'
   get "home/index" => "home#index"
   get "get_inbox" => "message#get_inbox"
-  # get 'message/index' => "message#index"
-  # get "message/new"   => "message#new"
-  # The priority is based upon order of creation: first created -> highest priority.
-  # See how all your routes lay out with "rake routes".
 
-  # You can have the root of your site routed with "root"
-  root 'home#index'
+  
+    root 'home#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

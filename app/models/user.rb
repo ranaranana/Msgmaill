@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :messages
+	has_many :contacts
+	#has_many :key => "value",messages
 	attr_accessor :login
 	#devise :registerable, :confirmable
   # Include default devise modules. Others available are:

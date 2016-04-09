@@ -1,0 +1,53 @@
+<h1>Create New Message</h1>
+<%= form_for :message, url: message_index_path,:html => {:multipart => true} do |f| %>
+
+<%#= form_for :msg do |f| %>
+<p>
+  <div class = "field">
+    <%= f.label :TO %>
+    <%#= f.text_field :to%><br>
+    <%= f.select :to, User.all.collect{ |f| [f.email] } %>
+    <%#= f.selectd :to_id ,User.all Collect { |f|  }%>
+  </div></p>
+
+  <div class="field">
+   <%= f.label :from%>
+   <%= f.text_field :from_email,value: current_user.email, readonly: :true%><br/>
+   <%= f.hidden_field :from, value:current_user.email%>
+ </div>
+ 
+ <!--  <p>
+    <div class = "field">
+     <%#= f.label :From %>
+    <%#= f.text_field :from_email,value: current_user.email, readonly: :true%><br/>
+     <%#= f.text_field :from ,value: current_user.login%><br>
+     <%#= f.text_field :email, value: current_user.email %>
+   </div> -->
+   <!-- </p> -->
+   <p>
+
+     <div class="field">
+      <%= f.label :subject, 'Subject' %>
+      <%= f.text_field :subject %><br>
+    </div>
+  </p>
+  
+   <div class="field">
+    <%= f.label :body, 'Message' %>
+    <%= f.cktext_area :body, :width => 100 %>
+       
+    <%#= f.text_area :body %>
+  </div>
+  <p>
+    <div class = "field">
+
+      <%= f.label :file %>
+      <%= f.file_field :attachment%><br>
+    </div>
+  </p>
+  <p>
+
+   <div class="actions">
+     <%= f.submit"Send mail"%>
+   </div></p>
+   <%end%>

@@ -1,0 +1,23 @@
+<p>
+<strong>To:</strong>
+<%= @message.to %>
+</p>
+<p>
+
+<strong>Subject:</strong>
+<%#= @message.from %>
+<%= @message.subject %>
+</p>
+
+<p>
+<strong>body:</strong>
+<%= @message.body.to_s.html_safe%><br>
+</p>
+<p>
+<strong>File:</strong>
+<%= link_to "Download Attachment",@message.attachment_url%>
+<%#= @message.attachment_url%>
+</p>
+
+ <%= link_to "BACK",message_index_path %>
+ 

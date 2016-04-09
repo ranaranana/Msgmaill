@@ -1,0 +1,31 @@
+<h1><i><b>List Of Contacts</b></i></h1>
+
+<table>
+	<tr>
+	<th>FirstName</th>
+	<th>LastName</th>
+	<th>Email</th>
+	<th>Mobile</th>
+</tr>
+<% @contacts.each do |contact| %>
+ <tr>
+ <td><%=contact.firstname%></td>
+ <td><%=contact.lastname%></td>
+ <td><%#=contact.current_user%>
+ <td><%=contact.email%></td>
+ <td><%=contact.mobile%></td>
+ <td><%=link_to "view", contact_path(contact)%>||
+ <%=link_to"Edit", edit_contact_path(:id => contact.id)%>|
+ <%=link_to "delete",contact ,method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+ </tr>
+ <%end%>
+</table>
+<%= link_to"Add new contact",new_contact_path%>
+||<%= link_to"Back", home_index_path%>
+
+
+
+
+
+

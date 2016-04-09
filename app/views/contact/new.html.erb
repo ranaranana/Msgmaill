@@ -1,0 +1,30 @@
+<h1>
+    <i>Create new Contact</i>
+</h1>
+<%= form_for :contact ,url:  contact_index_path do |f| %>
+    <p>
+	 	<div calss = "field">
+	 		<%= f.label :firstname %>
+	 		<%= f.text_field :firstname%>
+	 	</div>
+	</p>
+ 	<p>
+ 		<div class = "field"%>
+ 			<%= f.label :lastname %>
+ 			<%=f.text_field :lastname%>
+ 		</div></p>
+ 		<p>
+ 			<div class = "field">
+ 				<%= f.label :email%>
+ 				<%=f.text_field :email%>
+ 			</div></p>
+ 			<p>
+ 				<div class = "field"%>
+ 					<%= f.label :mobile%>
+ 					<%= f.text_field :mobile%>
+ 				</div></p>
+ 				<%#= f.hidden_field :user_id, value: current_user.id %>
+ 				<p><div class = "actions"%>
+ 					<%= f.submit "Create contact"%>
+ 				</div></p>
+ 				<%end%>

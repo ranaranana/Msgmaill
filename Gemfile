@@ -46,6 +46,7 @@ group :development, :test do
   gem 'carrierwave'
   gem "ckeditor"
   gem 'mini_magick'
+  gem 'country_select'
   
 end
 

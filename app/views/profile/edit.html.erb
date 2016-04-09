@@ -1,0 +1,63 @@
+<h1>Edit Profile</h1>
+<%= form_for @profile ,url:profiles_path(@profile), method: :put  do |f| %>
+<p>
+	<div class="field">
+		<%=f.label :Firstname%>
+		<%=f.text_field :firstname %>
+	</div>
+</p>
+<p>
+	<div class="field">
+		<%=f.label :Lastname%>
+		<%=f.text_field :lastname%>
+	</div>
+</p>
+<p>
+	<div class = "field">
+		<%=f.label :Username %>
+		<%=f.text_field :username %>
+
+	</div>
+</p>
+<p>
+	<div class = "field">
+		<%=f.label :Street%>
+		<%=f.text_field :street%>
+	</div>
+</p>
+<p>
+	<div class = "field">
+		<%=f.label :City%>
+		<%=f.text_field :city %>
+	</div>
+</p>
+<p>
+	<div class = "field">
+		<%=f.label :State%>
+		<%=f.text_field :state%>
+	</div>
+</p>
+<p>
+	<div class = "field">
+		<%=f.label :Country%>
+		<%=f.country_select("country", priority_countries: ["IN"])%>
+	</div>
+</p>
+<p>	
+	<div class = "field">
+		<%=f.label :Zipcode%>
+		<%=f.number_field :zipcode%>
+	</div>
+</p>
+<p>
+	<div class ="field">
+		<%=f.label :Profile%>
+		<%=f.file_field :profile%>
+	</div>
+</p>
+<p>
+	<div class = actions>
+		<%=f.submit "update"%>
+	</div>
+</p>
+<%end%>

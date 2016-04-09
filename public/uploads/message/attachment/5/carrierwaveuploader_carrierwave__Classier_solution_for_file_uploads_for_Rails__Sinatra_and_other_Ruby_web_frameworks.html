@@ -1,0 +1,2265 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)https://github.com/carrierwaveuploader/carrierwave -->
+<html lang="en" class=" is-copy-enabled is-u2f-enabled"><head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# object: http://ogp.me/ns/object# article: http://ogp.me/ns/article# profile: http://ogp.me/ns/profile#"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-70e9a8a189e4492a5d28894c52a8835b5a5b11438789ff59e18611d12605b16b.css" media="all" rel="stylesheet">
+    <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-df437c7303eef7baddf0b083d890885c877641efc02e47d9d09b532c33588c5d.css" media="all" rel="stylesheet">
+    
+    
+    
+
+    <link as="script" href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/frameworks-6ca2341c3a095a76515ea4b68fefbd6b078adf1bbedad254b6a5a72f0e396b6d.js" rel="preload">
+    <link as="script" href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/github-8fccd0d3ef828b6ecd1fea915fefe7a682717f1fd6c0332b3c9cd6789a9083da.js" rel="preload">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=1020">
+    
+    
+    <title>carrierwaveuploader/carrierwave: Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks</title>
+    <link rel="search" type="application/opensearchdescription+xml" href="https://github.com/opensearch.xml" title="GitHub">
+    <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+    <link rel="apple-touch-icon" href="https://github.com/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="https://github.com/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://github.com/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://github.com/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://github.com/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://github.com/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://github.com/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://github.com/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://github.com/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://github.com/apple-touch-icon-180x180.png">
+    <meta property="fb:app_id" content="1401488693436528">
+
+      <meta content="https://avatars3.githubusercontent.com/u/3982589?v=3&amp;s=400" name="twitter:image:src"><meta content="@github" name="twitter:site"><meta content="summary" name="twitter:card"><meta content="carrierwaveuploader/carrierwave" name="twitter:title"><meta content="carrierwave - Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks" name="twitter:description">
+      <meta content="https://avatars3.githubusercontent.com/u/3982589?v=3&amp;s=400" property="og:image"><meta content="GitHub" property="og:site_name"><meta content="object" property="og:type"><meta content="carrierwaveuploader/carrierwave" property="og:title"><meta content="https://github.com/carrierwaveuploader/carrierwave" property="og:url"><meta content="carrierwave - Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks" property="og:description">
+      <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+    <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+    <link rel="assets" href="https://assets-cdn.github.com/">
+    <link rel="web-socket" href="wss://live.github.com/_sockets/MTcxMjAwOTE6NmZjMGRlMTAwMDUxOWJmNzdjM2NiN2MzYjY3ZDBiZmU6MDNjN2U0MDc2NWUzNTgwMjFlODRmNjU0ZGUxZjBkNjUwMWU1YzA2NTZiNDRhZTJmNjgwODc0YzMxMjJmOTBkOQ==--97e40a6e1d6587dd638cd078e06565ad12614650">
+    <meta name="pjax-timeout" content="1000">
+    <link rel="sudo-modal" href="https://github.com/sessions/sudo_modal">
+
+    <meta name="msapplication-TileImage" content="/windows-tile.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="selected-link" value="repo_source" data-pjax-transient="">
+
+    <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+<meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-analytics" content="UA-3769691-2">
+
+<meta content="collector.githubapp.com" name="octolytics-host"><meta content="github" name="octolytics-app-id"><meta content="3B6220CF:3F68:68EDA65:56BDAD1F" name="octolytics-dimension-request_id"><meta content="17120091" name="octolytics-actor-id"><meta content="ranglu" name="octolytics-actor-login"><meta content="e20e802e46488b268c0c6637e42f2408d4c557a03db5c0270014a5da67936e32" name="octolytics-actor-hash">
+<meta content="/&lt;user-name&gt;/&lt;repo-name&gt;" data-pjax-transient="true" name="analytics-location">
+
+
+
+  <meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+        <meta name="hostname" content="github.com">
+    <meta name="user-login" content="ranglu">
+
+        <meta name="expected-hostname" content="github.com">
+      <meta name="js-proxy-site-detection-payload" content="NDJkNzdhMDExYjIzZWI2NmMyMmZmNGRmNGYyYmU4NDlmOTAxYzE4ODNjZDdkZTk2MjM1MGZmZDBmM2VlNzUxYnx7InJlbW90ZV9hZGRyZXNzIjoiNTkuOTguMzIuMjA3IiwicmVxdWVzdF9pZCI6IjNCNjIyMENGOjNGNjg6NjhFREE2NTo1NkJEQUQxRiJ9">
+
+      <link rel="mask-icon" href="https://assets-cdn.github.com/pinned-octocat.svg" color="#4078c0">
+      <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+
+    <meta content="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" name="form-nonce">
+
+    <meta http-equiv="x-pjax-version" content="7f20392cf13e0ff0c0838be6cfb2b2f3">
+
+      
+  <meta name="description" content="carrierwave - Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks">
+  <meta name="go-import" content="github.com/carrierwaveuploader/carrierwave git https://github.com/carrierwaveuploader/carrierwave.git">
+
+  <meta content="3982589" name="octolytics-dimension-user_id"><meta content="carrierwaveuploader" name="octolytics-dimension-user_login"><meta content="47087" name="octolytics-dimension-repository_id"><meta content="carrierwaveuploader/carrierwave" name="octolytics-dimension-repository_nwo"><meta content="true" name="octolytics-dimension-repository_public"><meta content="false" name="octolytics-dimension-repository_is_fork"><meta content="47087" name="octolytics-dimension-repository_network_root_id"><meta content="carrierwaveuploader/carrierwave" name="octolytics-dimension-repository_network_root_nwo">
+  <link href="https://github.com/carrierwaveuploader/carrierwave/commits/master.atom" rel="alternate" title="Recent Commits to carrierwave:master" type="application/atom+xml">
+
+
+      <link rel="canonical" href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks.html" data-pjax-transient="">
+  <style type="text/css"></style></head>
+
+
+  <body class="logged_in   env-production linux vis-public">
+    <a href="https://github.com/carrierwaveuploader/carrierwave#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
+
+    
+    
+    
+
+
+
+      <div class="header header-logged-in true" role="banner">
+  <div class="container clearfix">
+
+    <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg aria-hidden="true" class="octicon octicon-mark-github" height="28" role="img" version="1.1" viewBox="0 0 16 16" width="28"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+
+
+      <div class="site-search repo-scope js-site-search" role="search">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/carrierwaveuploader/carrierwave/search" class="js-site-search-form" data-global-search-url="/search" data-repo-search-url="/carrierwaveuploader/carrierwave/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+  <label class="js-chromeless-input-container form-control">
+    <div class="scope-badge">This repository</div>
+    <input type="text" class="js-site-search-focus js-site-search-field is-clearable chromeless-input" data-hotkey="s" name="q" placeholder="Search" aria-label="Search this repository" data-global-scope-placeholder="Search GitHub" data-repo-scope-placeholder="Search" tabindex="1" autocapitalize="off">
+  </label>
+</form>
+      </div>
+
+      <ul class="header-nav left" role="navigation">
+        <li class="header-nav-item">
+          <a href="https://github.com/pulls" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:pulls context:user" data-hotkey="g p" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls">
+            Pull requests
+</a>        </li>
+        <li class="header-nav-item">
+          <a href="https://github.com/issues" class="js-selected-navigation-item header-nav-link" data-ga-click="Header, click, Nav menu - item:issues context:user" data-hotkey="g i" data-selected-links="/issues /issues/assigned /issues/mentioned /issues">
+            Issues
+</a>        </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="https://gist.github.com/" data-ga-click="Header, go to gist, text:gist">Gist</a>
+          </li>
+      </ul>
+
+    
+<ul class="header-nav user-nav right" id="user-links">
+  <li class="header-nav-item">
+      <span class="js-socket-channel js-updatable-content" data-channel="notification-changed:ranglu" data-url="/notifications/header">
+  </span>
+
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link tooltipped tooltipped-s js-menu-target" href="https://github.com/new" aria-label="Create new…" data-ga-click="Header, create new, icon:add">
+      <svg aria-hidden="true" class="octicon octicon-plus left" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path></svg>
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <ul class="dropdown-menu dropdown-menu-sw">
+        
+<a class="dropdown-item" href="https://github.com/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+
+  <a class="dropdown-item" href="https://github.com/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="carrierwaveuploader/carrierwave">This repository</span>
+  </div>
+    <a class="dropdown-item" href="https://github.com/carrierwaveuploader/carrierwave/issues/new" data-ga-click="Header, create new issue">
+      New issue
+    </a>
+
+      </ul>
+    </div>
+  </li>
+
+  <li class="header-nav-item dropdown js-menu-container">
+    <a class="header-nav-link name tooltipped tooltipped-sw js-menu-target" href="https://github.com/ranglu" aria-label="View profile and more" data-ga-click="Header, show menu, icon:avatar">
+      <img alt="@ranglu" class="avatar" height="20" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/17120091" width="20">
+      <span class="dropdown-caret"></span>
+    </a>
+
+    <div class="dropdown-menu-content js-menu-content">
+      <div class="dropdown-menu  dropdown-menu-sw">
+        <div class=" dropdown-header header-nav-current-user css-truncate">
+            Signed in as <strong class="css-truncate-target">ranglu</strong>
+
+        </div>
+
+
+        <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="https://github.com/ranglu" data-ga-click="Header, go to profile, text:your profile">
+            Your profile
+          </a>
+        <a class="dropdown-item" href="https://github.com/stars" data-ga-click="Header, go to starred repos, text:your stars">
+          Your stars
+        </a>
+          <a class="dropdown-item" href="https://github.com/explore" data-ga-click="Header, go to explore, text:explore">
+            Explore
+          </a>
+          <a class="dropdown-item" href="https://github.com/integrations" data-ga-click="Header, go to integrations, text:integrations">
+            Integrations
+          </a>
+        <a class="dropdown-item" href="https://help.github.com/" data-ga-click="Header, go to help, text:help">
+          Help
+        </a>
+
+
+          <div class="dropdown-divider"></div>
+
+          <a class="dropdown-item" href="https://github.com/settings/profile" data-ga-click="Header, go to settings, icon:settings">
+            Settings
+          </a>
+
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/logout" class="logout-form" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="swLU3RBK0RUCUDHJF/P+vQdYVVRe/YfBD2uOfNnZM3/1zmf3zxey78KrscCbEW6Cn2IvGGURY8UYzLU7NByr4g=="></div>
+            <button class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+              Sign out
+            </button>
+</form>
+      </div>
+    </div>
+  </li>
+</ul>
+
+
+    
+  </div>
+</div>
+
+      
+
+      
+
+
+    <div id="start-of-content" class="accessibility-aid"></div>
+
+      <div id="js-flash-container">
+</div>
+
+
+    <div role="main" class="main-content">
+        <div itemscope="" itemtype="http://schema.org/SoftwareSourceCode">
+    <div id="js-repo-pjax-container" class="context-loader-container js-repo-nav-next" data-pjax-container="">
+      
+<div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
+  <div class="container repohead-details-container">
+
+    
+
+<ul class="pagehead-actions">
+
+  <li>
+        <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="cS2mRTWHhBLT6qTZHgXUtekMVkGX9yT90hN9N6KDTKZx5fXuPkqxhxDxVq+BwMMnOC1wXzHUBmkbrWKW2AJ3tQ=="></div>      <input id="repository_id" name="repository_id" type="hidden" value="47087">
+
+        <div class="select-menu js-menu-container js-select-menu">
+          <a href="https://github.com/carrierwaveuploader/carrierwave/subscription" class="btn btn-sm btn-with-count select-menu-button js-menu-target" role="button" tabindex="0" aria-haspopup="true" data-ga-click="Repository, click Watch settings, action:files#disambiguate">
+            <span class="js-select-button">
+              <svg aria-hidden="true" class="octicon octicon-eye" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+              Watch
+            </span>
+          </a>
+          <a class="social-count js-social-count" href="https://github.com/carrierwaveuploader/carrierwave/watchers">
+            161
+          </a>
+
+        <div class="select-menu-modal-holder">
+          <div class="select-menu-modal subscription-menu-modal js-menu-content" aria-hidden="true">
+            <div class="select-menu-header">
+              <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+              <span class="select-menu-title">Notifications</span>
+            </div>
+
+              <div class="select-menu-list js-navigation-container" role="menu">
+
+                <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input checked="checked" id="do_included" name="do" type="radio" value="included">
+                    <span class="select-menu-item-heading">Not watching</span>
+                    <span class="description">Be notified when participating or @mentioned.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Watch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_subscribed" name="do" type="radio" value="subscribed">
+                    <span class="select-menu-item-heading">Watching</span>
+                    <span class="description">Be notified of all conversations.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-eye" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6c4.94 0 7.94-6 7.94-6S13 2 8.06 2z m-0.06 10c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4z m2-4c0 1.11-0.89 2-2 2s-2-0.89-2-2 0.89-2 2-2 2 0.89 2 2z"></path></svg>
+                      Unwatch
+                    </span>
+                  </div>
+                </div>
+
+                <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                  <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                  <div class="select-menu-item-text">
+                    <input id="do_ignore" name="do" type="radio" value="ignore">
+                    <span class="select-menu-item-heading">Ignoring</span>
+                    <span class="description">Never be notified.</span>
+                    <span class="js-select-button-text hidden-select-button-text">
+                      <svg aria-hidden="true" class="octicon octicon-mute" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M8 2.81v10.38c0 0.67-0.81 1-1.28 0.53L3 10H1c-0.55 0-1-0.45-1-1V7c0-0.55 0.45-1 1-1h2l3.72-3.72c0.47-0.47 1.28-0.14 1.28 0.53z m7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06 1.97 1.97-1.97 1.97 1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06-1.97-1.97 1.97-1.97z"></path></svg>
+                      Stop ignoring
+                    </span>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+</form>
+  </li>
+
+  <li>
+    
+  <div class="js-toggler-container js-social-container starring-container ">
+
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/carrierwaveuploader/carrierwave/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="wyytnNSHvPAzk49bRz1WPvc8t5Jwa4TxpL8ww/wmgqEUxYBciw6LMl5dMv3FU1o2IhE4P20NGlDvEgnhtFDO7w=="></div>
+      <button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Unstar this repository" title="Unstar carrierwaveuploader/carrierwave" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/carrierwaveuploader/carrierwave/stargazers">
+          6,458
+        </a>
+</form>
+    <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/carrierwaveuploader/carrierwave/star" class="js-toggler-form unstarred js-star-button" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="a23XaVJgmhqZTSrHQfSV7Fl85LDphY6Uxexwr5NQMsGSa3QoGKDmN7uGKEnrK695E/QFOamskXiNri/guS8O6A=="></div>
+      <button class="btn btn-sm btn-with-count js-toggler-target" aria-label="Star this repository" title="Star carrierwaveuploader/carrierwave" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star">
+        <svg aria-hidden="true" class="octicon octicon-star" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M14 6l-4.9-0.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14l4.33-2.33 4.33 2.33L10.4 9.26 14 6z"></path></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="https://github.com/carrierwaveuploader/carrierwave/stargazers">
+          6,458
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <a href="https://github.com/carrierwaveuploader/carrierwave#fork-destination-box" class="btn btn-sm btn-with-count" title="Fork your own copy of carrierwaveuploader/carrierwave to your account" aria-label="Fork your own copy of carrierwaveuploader/carrierwave to your account" rel="facebox" data-ga-click="Repository, show fork modal, action:files#disambiguate; text:Fork">
+              <svg aria-hidden="true" class="octicon octicon-repo-forked" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path d="M8 1c-1.11 0-2 0.89-2 2 0 0.73 0.41 1.38 1 1.72v1.28L5 8 3 6v-1.28c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v1.78l3 3v1.78c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V9.5l3-3V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2zM2 4.2c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3 10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m3-10c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+            Fork
+          </a>
+
+          <div id="fork-destination-box" style="display: none;">
+            <h2 class="facebox-header" data-facebox-id="facebox-header">Where should we fork this repository?</h2>
+            <include-fragment src="" class="js-fork-select-fragment fork-select-fragment" data-url="/carrierwaveuploader/carrierwave/fork?fragment=1">
+              <img alt="Loading" height="64" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-128.gif" width="64">
+            </include-fragment>
+          </div>
+
+    <a href="https://github.com/carrierwaveuploader/carrierwave/network" class="social-count">
+      1,140
+    </a>
+  </li>
+</ul>
+
+    <h1 class="entry-title public ">
+  <svg aria-hidden="true" class="octicon octicon-repo" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M4 9h-1v-1h1v1z m0-3h-1v1h1v-1z m0-2h-1v1h1v-1z m0-2h-1v1h1v-1z m8-1v12c0 0.55-0.45 1-1 1H6v2l-1.5-1.5-1.5 1.5V14H1c-0.55 0-1-0.45-1-1V1C0 0.45 0.45 0 1 0h10c0.55 0 1 0.45 1 1z m-1 10H1v2h2v-1h3v1h5V11z m0-10H2v9h9V1z"></path></svg>
+  <span class="author" itemprop="author"><a href="https://github.com/carrierwaveuploader" class="url fn" rel="author">carrierwaveuploader</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks.html" data-pjax="#js-repo-pjax-container">carrierwave</a></strong>
+
+  <span class="page-context-loader">
+    <img alt="" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+  </span>
+
+</h1>
+
+  </div>
+  <div class="container">
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax js-octicon-loaders" itemscope="" itemtype="http://schema.org/BreadcrumbList" role="navigation" data-pjax="#js-repo-pjax-container">
+
+  <a href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks.html" aria-label="Code" aria-selected="true" class="js-selected-navigation-item selected reponav-item" data-hotkey="g c" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches /carrierwaveuploader/carrierwave" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+      <svg aria-hidden="true" class="octicon octicon-code" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M9.5 3l-1.5 1.5 3.5 3.5L8 11.5l1.5 1.5 4.5-5L9.5 3zM4.5 3L0 8l4.5 5 1.5-1.5L2.5 8l3.5-3.5L4.5 3z"></path></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>
+    <a href="https://github.com/carrierwaveuploader/carrierwave/issues" aria-label="Open Issues" class="js-selected-navigation-item reponav-item" data-hotkey="g i" data-selected-links="repo_issues repo_labels repo_milestones /carrierwaveuploader/carrierwave/issues" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+      <svg aria-hidden="true" class="octicon octicon-issue-opened" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z m1 3H6v5h2V4z m0 6H6v2h2V10z"></path></svg>
+      <span itemprop="name">Issues</span>
+      <span class="counter">39</span>
+      <meta itemprop="position" content="2">
+</a>
+  <a href="https://github.com/carrierwaveuploader/carrierwave/pulls" aria-label="Open pull requests" class="js-selected-navigation-item reponav-item" data-hotkey="g p" data-selected-links="repo_pulls /carrierwaveuploader/carrierwave/pulls" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+    <svg aria-hidden="true" class="octicon octicon-git-pull-request" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M11 11.28c0-1.73 0-6.28 0-6.28-0.03-0.78-0.34-1.47-0.94-2.06s-1.28-0.91-2.06-0.94c0 0-1.02 0-1 0V0L4 3l3 3V4h1c0.27 0.02 0.48 0.11 0.69 0.31s0.3 0.42 0.31 0.69v6.28c-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72z m-1 2.92c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2zM4 3c0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72 0 1.55 0 5.56 0 6.56-0.59 0.34-1 0.98-1 1.72 0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.73-0.41-1.38-1-1.72V4.72c0.59-0.34 1-0.98 1-1.72z m-0.8 10c0 0.66-0.55 1.2-1.2 1.2s-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2z m-1.2-8.8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+    <span itemprop="name">Pull requests</span>
+    <span class="counter">3</span>
+    <meta itemprop="position" content="3">
+</a>
+    <a href="https://github.com/carrierwaveuploader/carrierwave/wiki" class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /carrierwaveuploader/carrierwave/wiki">
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      Wiki
+</a>
+  <a href="https://github.com/carrierwaveuploader/carrierwave/pulse" class="js-selected-navigation-item reponav-item" data-selected-links="pulse /carrierwaveuploader/carrierwave/pulse">
+    <svg aria-hidden="true" class="octicon octicon-pulse" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M11.5 8L8.8 5.4 6.6 8.5 5.5 1.6 2.38 8H0V10h3.6L4.5 8.2l0.9 5.4L9 8.5l1.6 1.5H14V8H11.5z"></path></svg>
+    Pulse
+</a>
+  <a href="https://github.com/carrierwaveuploader/carrierwave/graphs" class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors /carrierwaveuploader/carrierwave/graphs">
+    <svg aria-hidden="true" class="octicon octicon-graph" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M16 14v1H0V0h1v14h15z m-11-1H3V8h2v5z m4 0H7V3h2v10z m4 0H11V6h2v7z"></path></svg>
+    Graphs
+</a>
+
+</nav>
+
+  </div>
+</div>
+
+<div class="container new-discussion-timeline experiment-repo-nav">
+  <div class="repository-content">
+
+    
+<div class="repository-meta js-details-container">
+  <span class="repository-meta-content">
+        <span itemprop="about"> Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks</span>
+        <span itemprop="url"><a href="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks.html" rel="nofollow">https://github.com/carrierwaveuploader/carrierwave</a></span>
+  </span>
+
+</div>
+
+
+  <div class="overall-summary overall-summary-bottomless">
+    <div class="stats-switcher-viewport js-stats-switcher-viewport">
+      <div class="stats-switcher-wrapper">
+      <ul class="numbers-summary">
+        <li class="commits">
+          <a data-pjax="" href="https://github.com/carrierwaveuploader/carrierwave/commits/master">
+              <svg aria-hidden="true" class="octicon octicon-history" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M8 13H6V6h5v2H8v5zM7 1c-2.19 0-4.13 1.02-5.41 2.59L0 2v4h4l-1.5-1.5c1.05-1.33 2.67-2.2 4.5-2.2 3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8c0-0.34 0.03-0.67 0.09-1H0.08c-0.05 0.33-0.08 0.66-0.08 1 0 3.86 3.14 7 7 7s7-3.14 7-7S10.86 1 7 1z"></path></svg>
+              <span class="num text-emphasized">
+                1,978
+              </span>
+              commits
+          </a>
+        </li>
+        <li>
+          <a data-pjax="" href="https://github.com/carrierwaveuploader/carrierwave/branches">
+            <svg aria-hidden="true" class="octicon octicon-git-branch" height="16" role="img" version="1.1" viewBox="0 0 10 16" width="10"><path d="M10 5c0-1.11-0.89-2-2-2s-2 0.89-2 2c0 0.73 0.41 1.38 1 1.72v0.3c-0.02 0.52-0.23 0.98-0.63 1.38s-0.86 0.61-1.38 0.63c-0.83 0.02-1.48 0.16-2 0.45V4.72c0.59-0.34 1-0.98 1-1.72 0-1.11-0.89-2-2-2S0 1.89 0 3c0 0.73 0.41 1.38 1 1.72v6.56C0.41 11.63 0 12.27 0 13c0 1.11 0.89 2 2 2s2-0.89 2-2c0-0.53-0.2-1-0.53-1.36 0.09-0.06 0.48-0.41 0.59-0.47 0.25-0.11 0.56-0.17 0.94-0.17 1.05-0.05 1.95-0.45 2.75-1.25s1.2-1.98 1.25-3.02h-0.02c0.61-0.36 1.02-1 1.02-1.73zM2 1.8c0.66 0 1.2 0.55 1.2 1.2s-0.55 1.2-1.2 1.2-1.2-0.55-1.2-1.2 0.55-1.2 1.2-1.2z m0 12.41c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z m6-8c-0.66 0-1.2-0.55-1.2-1.2s0.55-1.2 1.2-1.2 1.2 0.55 1.2 1.2-0.55 1.2-1.2 1.2z"></path></svg>
+            <span class="num text-emphasized">
+              7
+            </span>
+            branches
+          </a>
+        </li>
+
+        <li>
+          <a data-pjax="" href="https://github.com/carrierwaveuploader/carrierwave/releases">
+            <svg aria-hidden="true" class="octicon octicon-tag" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6.73 2.73c-0.47-0.47-1.11-0.73-1.77-0.73H2.5C1.13 2 0 3.13 0 4.5v2.47c0 0.66 0.27 1.3 0.73 1.77l6.06 6.06c0.39 0.39 1.02 0.39 1.41 0l4.59-4.59c0.39-0.39 0.39-1.02 0-1.41L6.73 2.73zM1.38 8.09c-0.31-0.3-0.47-0.7-0.47-1.13V4.5c0-0.88 0.72-1.59 1.59-1.59h2.47c0.42 0 0.83 0.16 1.13 0.47l6.14 6.13-4.73 4.73L1.38 8.09z m0.63-4.09h2v2H2V4z"></path></svg>
+            <span class="num text-emphasized">
+              42
+            </span>
+            releases
+          </a>
+        </li>
+
+        <li>
+            <a href="https://github.com/carrierwaveuploader/carrierwave/graphs/contributors">
+    <span class="num text-emphasized">
+      266
+    </span>
+    contributors
+</a>
+
+        </li>
+      </ul>
+
+        <div class="repository-lang-stats">
+          <ol class="repository-lang-stats-numbers">
+            <li>
+                <a href="https://github.com/carrierwaveuploader/carrierwave/search?l=ruby" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#701516;"></span>
+                  <span class="lang">Ruby</span>
+                  <span class="percent">93.4%</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/carrierwaveuploader/carrierwave/search?l=cucumber" data-ga-click="Repository, language stats search click, location:repo overview">
+                  <span class="color-block language-color" style="background-color:#ccc;"></span>
+                  <span class="lang">Cucumber</span>
+                  <span class="percent">6.6%</span>
+                </a>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="repository-lang-stats-graph js-toggle-lang-stats" title="Click for language details" data-ga-click="Repository, language bar stats toggle, location:repo overview">
+      <span class="language-color" aria-label="Ruby 93.4%" style="width:93.4%; background-color:#701516;" itemprop="programmingLanguage">Ruby</span>
+      <span class="language-color" aria-label="Cucumber 6.6%" style="width:6.6%; background-color:#ccc;" itemprop="programmingLanguage">Cucumber</span>
+    </div>
+
+    
+
+  <div class="file-navigation in-mid-page">
+  <div class="right">
+    <div class="btn-group">
+      
+  <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/carrierwaveuploader/carrierwave/new/master" class="button_to" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="jeAR4pyiGGuOf37AP1EUPSgCodNsZVXkOOur37tmCDxnwVUgoxflUWdxAQbIGbIN/vz1FAd3mcGc170KL4FVEw=="></div>
+    <button class="btn btn-sm" type="submit" data-disable-with="Creating file…">
+        New file
+    </button>
+</form>
+
+
+      <a href="https://github.com/carrierwaveuploader/carrierwave/find/master" class="btn btn-sm empty-icon right js-show-file-finder" data-pjax="" data-hotkey="t" data-ga-click="Repository, find file, location:repo overview">
+        Find file
+      </a>
+    </div>
+      <div class="file-navigation-options" data-multiple="">
+
+        <div class="file-navigation-option">
+          <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="https://github.com/users/set_protocol" class="js-set-user-protocol-preference" data-form-nonce="b5aaa0aa7b717565c639cf844bf8e0b11aed3b2e" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"><input name="authenticity_token" type="hidden" value="pq9yNcFujByhwnb1BYWTR5tLLyftZLc1SmGWFW+oux7+3q+md8zHqZr4memMCWBOyGDFtMD2j8KPacdTto6rwQ=="></div>
+            <input type="hidden" name="protocol_type" value="clone">
+
+            <div class="select-menu js-menu-container js-select-menu">
+              <div class="input-group js-select-button js-zeroclipboard-container">
+                <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/carrierwaveuploader/carrierwave.git" readonly="">
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+</div>
+
+              </div>
+
+              <div class="select-menu-modal-holder">
+                <div class="select-menu-modal js-menu-content" aria-hidden="true">
+                  <div class="select-menu-header">
+                    <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+                    <span class="select-menu-title">Choose a clone URL</span>
+                  </div>
+
+                  <div class="select-menu-list js-navigation-container" role="menu">
+                      <div class="select-menu-item js-navigation-item selected" role="menuitem" tabindex="0">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                        <div class="select-menu-item-text">
+                          <input type="radio" name="protocol_selector" value="http" checked="">
+                          <span class="select-menu-item-heading">
+                            HTTPS
+                            (recommended)
+                          </span>
+                            <span class="description">
+                              Clone with Git or checkout with SVN using the repository's web address.
+                            </span>
+                          <span class="js-select-button-text hidden-select-button-text">
+                            <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone HTTPS, location:repo overview">
+    HTTPS
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="https://github.com/carrierwaveuploader/carrierwave.git" readonly="">
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+</div>
+
+                          </span>
+                        </div>
+                      </div>
+                      <div class="select-menu-item js-navigation-item " role="menuitem" tabindex="0">
+                        <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+                        <div class="select-menu-item-text">
+                          <input type="radio" name="protocol_selector" value="ssh">
+                          <span class="select-menu-item-heading">
+                            SSH
+                            
+                          </span>
+                            <span class="description">
+                              Clone with an SSH key and passphrase from your GitHub settings.
+                            </span>
+                          <span class="js-select-button-text hidden-select-button-text">
+                            <div class="input-group-button">
+  <button type="button" class="btn btn-sm select-menu-button js-menu-target" data-ga-click="Repository, clone SSH, location:repo overview">
+    SSH
+  </button>
+</div>
+<input type="text" class="input-monospace input-mini js-zeroclipboard-target js-url-field" value="git@github.com:carrierwaveuploader/carrierwave.git" readonly="">
+<div class="input-group-button">
+  <button aria-label="Copy to clipboard" class="js-zeroclipboard btn btn-sm zeroclipboard-button tooltipped tooltipped-s" data-copied-hint="Copied!" type="button"><svg aria-hidden="true" class="octicon octicon-clippy" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M2 12h4v1H2v-1z m5-6H2v1h5v-1z m2 3V7L6 10l3 3V11h5V9H9z m-4.5-1H2v1h2.5v-1zM2 11h2.5v-1H2v1z m9 1h1v2c-0.02 0.28-0.11 0.52-0.3 0.7s-0.42 0.28-0.7 0.3H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h3C4 0.89 4.89 0 6 0s2 0.89 2 2h3c0.55 0 1 0.45 1 1v5h-1V5H1v9h10V12zM2 4h8c0-0.55-0.45-1-1-1h-1c-0.55 0-1-0.45-1-1s-0.45-1-1-1-1 0.45-1 1-0.45 1-1 1h-1c-0.55 0-1 0.45-1 1z"></path></svg></button>
+</div>
+
+                          </span>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="select-menu-list" role="menu">
+                    <a class="select-menu-item select-menu-action" href="https://help.github.com/articles/which-remote-url-should-i-use" target="_blank">
+                      <svg aria-hidden="true" class="octicon octicon-question select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M6 10h2v2H6V10z m4-3.5c0 2.14-2 2.5-2 2.5H6c0-0.55 0.45-1 1-1h0.5c0.28 0 0.5-0.22 0.5-0.5v-1c0-0.28-0.22-0.5-0.5-0.5h-1c-0.28 0-0.5 0.22-0.5 0.5v0.5H4c0-1.5 1.5-3 3-3s3 1 3 2.5zM7 2.3c3.14 0 5.7 2.56 5.7 5.7S10.14 13.7 7 13.7 1.3 11.14 1.3 8s2.56-5.7 5.7-5.7m0-1.3C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7S10.86 1 7 1z"></path></svg>
+                      <div class="select-menu-item-text">
+                        Learn more about clone URLs
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+</form>        </div>
+
+          <div class="file-navigation-option">
+  </div>
+
+
+        <div class="file-navigation-option">
+          <a href="https://github.com/carrierwaveuploader/carrierwave/archive/master.zip" class="btn btn-sm" rel="nofollow" data-ga-click="Repository, download zip, location:repo overview">
+            Download ZIP
+          </a>
+        </div>
+      </div>
+  </div>
+
+  
+<div class="select-menu js-menu-container js-select-menu left">
+  <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w" title="master" type="button" aria-label="Switch branches or tags" tabindex="0" aria-haspopup="true">
+    <i>Branch:</i>
+    <span class="js-select-button css-truncate-target">master</span>
+  </button>
+
+  <div class="select-menu-modal-holder js-menu-content js-navigation-container" data-pjax="" aria-hidden="true">
+
+    <div class="select-menu-modal">
+      <div class="select-menu-header">
+        <svg aria-label="Close" class="octicon octicon-x js-menu-close" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+        <span class="select-menu-title">Switch branches/tags</span>
+      </div>
+
+      <div class="select-menu-filters">
+        <div class="select-menu-text-filter">
+          <input type="text" aria-label="Filter branches/tags" id="context-commitish-filter-field" class="js-filterable-field js-navigation-enable" placeholder="Filter branches/tags">
+        </div>
+        <div class="select-menu-tabs">
+          <ul>
+            <li class="select-menu-tab">
+              <a href="https://github.com/carrierwaveuploader/carrierwave#" data-tab-filter="branches" data-filter-placeholder="Filter branches/tags" class="js-select-menu-tab" role="tab">Branches</a>
+            </li>
+            <li class="select-menu-tab">
+              <a href="https://github.com/carrierwaveuploader/carrierwave#" data-tab-filter="tags" data-filter-placeholder="Find a tag…" class="js-select-menu-tab" role="tab">Tags</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="branches" role="menu">
+
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/0.3-stable" data-name="0.3-stable" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.3-stable">
+                0.3-stable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/0.4-stable" data-name="0.4-stable" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.4-stable">
+                0.4-stable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/0.5-stable" data-name="0.5-stable" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.5-stable">
+                0.5-stable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/0.10-stable" data-name="0.10-stable" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.10-stable">
+                0.10-stable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/0.11-stable" data-name="0.11-stable" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="0.11-stable">
+                0.11-stable
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/downloader-strategies" data-name="downloader-strategies" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="downloader-strategies">
+                downloader-strategies
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open selected" href="https://github.com/carrierwaveuploader/carrierwave/tree/master" data-name="master" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="master">
+                master
+              </span>
+            </a>
+        </div>
+
+          <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+      <div class="select-menu-list select-menu-tab-bucket js-select-menu-tab-bucket" data-tab-filter="tags">
+        <div data-filterable-for="context-commitish-filter-field" data-filterable-type="substring">
+
+
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.10.0" data-name="v0.10.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.10.0">
+                v0.10.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.9.0" data-name="v0.9.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.9.0">
+                v0.9.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.8.0" data-name="v0.8.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.8.0">
+                v0.8.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.7.1" data-name="v0.7.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.7.1">
+                v0.7.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.7.0" data-name="v0.7.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.7.0">
+                v0.7.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.6.2" data-name="v0.6.2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.2">
+                v0.6.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.6.1" data-name="v0.6.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.1">
+                v0.6.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.6.0" data-name="v0.6.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.6.0">
+                v0.6.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.8" data-name="v0.5.8" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.8">
+                v0.5.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.7" data-name="v0.5.7" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.7">
+                v0.5.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.6" data-name="v0.5.6" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.6">
+                v0.5.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.5" data-name="v0.5.5" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.5">
+                v0.5.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.4" data-name="v0.5.4" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.4">
+                v0.5.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.3" data-name="v0.5.3" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.3">
+                v0.5.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.2" data-name="v0.5.2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.2">
+                v0.5.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.1" data-name="v0.5.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.1">
+                v0.5.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.0" data-name="v0.5.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.0">
+                v0.5.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.5.0.beta2" data-name="v0.5.0.beta2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.5.0.beta2">
+                v0.5.0.beta2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.10" data-name="v0.4.10" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.10">
+                v0.4.10
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.9" data-name="v0.4.9" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.9">
+                v0.4.9
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.8" data-name="v0.4.8" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.8">
+                v0.4.8
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.7" data-name="v0.4.7" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.7">
+                v0.4.7
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.6" data-name="v0.4.6" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.6">
+                v0.4.6
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.5" data-name="v0.4.5" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.5">
+                v0.4.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.4" data-name="v0.4.4" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.4">
+                v0.4.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.3" data-name="v0.4.3" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.3">
+                v0.4.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.2" data-name="v0.4.2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.2">
+                v0.4.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.1" data-name="v0.4.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.1">
+                v0.4.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.4.0" data-name="v0.4.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.4.0">
+                v0.4.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.5.2" data-name="v0.3.5.2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.5.2">
+                v0.3.5.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.5.1" data-name="v0.3.5.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.5.1">
+                v0.3.5.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.5" data-name="v0.3.5" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.5">
+                v0.3.5
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.4" data-name="v0.3.4" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.4">
+                v0.3.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.3" data-name="v0.3.3" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.3">
+                v0.3.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.2" data-name="v0.3.2" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.2">
+                v0.3.2
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.1" data-name="v0.3.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.1">
+                v0.3.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.3.0" data-name="v0.3.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.3.0">
+                v0.3.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.2.4" data-name="v0.2.4" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.2.4">
+                v0.2.4
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.2.3" data-name="v0.2.3" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.2.3">
+                v0.2.3
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.2.1" data-name="v0.2.1" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.2.1">
+                v0.2.1
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.2.0" data-name="v0.2.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.2.0">
+                v0.2.0
+              </span>
+            </a>
+            <a class="select-menu-item js-navigation-item js-navigation-open " href="https://github.com/carrierwaveuploader/carrierwave/tree/v0.1.0" data-name="v0.1.0" data-skip-pjax="true" rel="nofollow">
+              <svg aria-hidden="true" class="octicon octicon-check select-menu-item-icon" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M12 5L4 13 0 9l1.5-1.5 2.5 2.5 6.5-6.5 1.5 1.5z"></path></svg>
+              <span class="select-menu-item-text css-truncate-target" title="v0.1.0">
+                v0.1.0
+              </span>
+            </a>
+        </div>
+
+        <div class="select-menu-no-results">Nothing to show</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+      <a href="https://github.com/carrierwaveuploader/carrierwave/pull/new/master" class="btn btn-sm btn-primary new-pull-request-btn" data-pjax="" data-ga-click="Repository, new pull request, location:repo overview">
+        New pull request
+      </a>
+
+  <div class="breadcrumb">
+    
+  </div>
+</div>
+
+
+
+
+
+
+  <div class="commit-tease js-details-container">
+    <span class="right">
+      Latest commit
+      <a class="commit-tease-sha" href="https://github.com/carrierwaveuploader/carrierwave/commit/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" data-pjax="">
+        aa74e9e
+      </a>
+      <time datetime="2016-02-04T00:44:38Z" is="relative-time" title="Feb 4, 2016, 6:14 AM GMT+5:30">8 days ago</time>
+    </span>
+
+
+    <span class="commit-author-section">
+      <img alt="@thomasfedb" class="avatar" height="20" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/193831" width="20">
+      <a href="https://github.com/thomasfedb" class="user-mention" rel="contributor">thomasfedb</a>
+    </span>
+
+        <a href="https://github.com/carrierwaveuploader/carrierwave/commit/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" class="message" data-pjax="true" title="Merge pull request #1850 from oss92/modularize
+
+Refactor file manipulation methods in SanitizedFile">Merge pull request</a> <a href="https://github.com/carrierwaveuploader/carrierwave/pull/1850" class="issue-link js-issue-link" data-url="https://github.com/carrierwaveuploader/carrierwave/issues/1850" data-id="129181528" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#1850</a> <a href="https://github.com/carrierwaveuploader/carrierwave/commit/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" class="message" data-pjax="true" title="Merge pull request #1850 from oss92/modularize
+
+Refactor file manipulation methods in SanitizedFile">from oss92/modularize</a>
+          <span class="hidden-text-expander inline">
+            <a href="https://github.com/carrierwaveuploader/carrierwave#" class="js-details-target">…</a>
+          </span>
+    
+
+      <div class="commit-desc"><pre class="text-small">Refactor file manipulation methods in SanitizedFile</pre></div>
+  </div>
+
+
+
+<div class="file-wrap">
+
+  <a href="https://github.com/carrierwaveuploader/carrierwave/tree/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
+
+  <table class="files js-navigation-container js-active-navigation-container" data-pjax="">
+
+
+    <tbody>
+      <tr class="warning include-fragment-error">
+        <td class="icon"><svg aria-hidden="true" class="octicon octicon-alert" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg></td>
+        <td class="content" colspan="3">Failed to load latest commit information.</td>
+      </tr>
+
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/tree/master/features" class="js-directory-link js-navigation-open" id="9f034b63948763d489f944319c2eb3de-6f4ebf055d9ed61e9f20b13514e62196c99388ab" title="features">features</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/55f9fad78f473199d4b96256f0fd5190033b749a" class="message" data-pjax="true" title="Replace ShamRack by WebMock in specs
+
+WebMock provides a cleaner API that helps to simplify some specs
+examples.">Replace ShamRack by WebMock in specs</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-09T19:20:56Z" is="time-ago" title="Jan 10, 2016, 12:50 AM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/tree/master/gemfiles" class="js-directory-link js-navigation-open" id="ac46a8b5a40536c4171a5ebee5aca2d4-1d74f9c1b8e26881ac2b1853258432e1d2b77106" title="gemfiles">gemfiles</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/852c372d1b6a685eaa1f9378c3628021c5a2a90a" class="message" data-pjax="true" title="Edge Rails depends on sass-rails master">Edge Rails depends on sass-rails master</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-09-05T02:27:37Z" is="time-ago" title="Sep 5, 2015, 7:57 AM GMT+5:30">5 months ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/tree/master/lib" class="js-directory-link js-navigation-open" id="e8acc63b1e238f3255c900eed37254b8-66cb4db7bb1b8b95e798b1552dd664dd1bfd67b0" title="lib">lib</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" class="message" data-pjax="true" title="Merge pull request #1850 from oss92/modularize
+
+Refactor file manipulation methods in SanitizedFile">Merge pull request</a> <a href="https://github.com/carrierwaveuploader/carrierwave/pull/1850" class="issue-link js-issue-link" data-url="https://github.com/carrierwaveuploader/carrierwave/issues/1850" data-id="129181528" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#1850</a> <a href="https://github.com/carrierwaveuploader/carrierwave/commit/aa74e9e4301cb1ec7cd1adbdc294e037f881d4b5" class="message" data-pjax="true" title="Merge pull request #1850 from oss92/modularize
+
+Refactor file manipulation methods in SanitizedFile">from oss92/modularize</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-02-04T00:44:38Z" is="time-ago" title="Feb 4, 2016, 6:14 AM GMT+5:30">8 days ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/tree/master/script" class="js-directory-link js-navigation-open" id="3205c0ded576131ea255ad2bd38b0fb2-10a4310f80338842d1eaf1f562d4091f7daeca79" title="script">script</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/41e951a7bbe868b1c607c3909c87a6bad196d33e" class="message" data-pjax="true" title="Converted to use Hoe">Converted to use Hoe</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2009-08-18T18:45:33Z" is="time-ago" title="Aug 19, 2009, 12:15 AM GMT+5:30">7 years ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-directory" height="16" role="img" version="1.1" viewBox="0 0 14 16" width="14"><path d="M13 4H7v-1c0-0.66-0.31-1-1-1H1c-0.55 0-1 0.45-1 1v10c0 0.55 0.45 1 1 1h12c0.55 0 1-0.45 1-1V5c0-0.55-0.45-1-1-1z m-7 0H1v-1h5v1z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/tree/master/spec" class="js-directory-link js-navigation-open" id="b979c2934ac0b4ba3f08dabfdd1b2299-9bf49b4c6920539ed4e89811383156f191350fa2" title="spec">spec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/8b0195a23a522fd1105255bc607bec6712a9978e" class="message" data-pjax="true" title="Fix returning a new instance of the uploader on every uploader call">Fix returning a new instance of the uploader on every uploader call</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-02-01T19:59:25Z" is="time-ago" title="Feb 2, 2016, 1:29 AM GMT+5:30">11 days ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/.gitignore" class="js-directory-link js-navigation-open" id="a084b794bc0759e7a6b77810e01874f2-742b6884c4772ab13b87451694c1fae3a1120472" title=".gitignore">.gitignore</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/cb5ea2d0e18684ae7ddd1f4487881f99a39c3c9b" class="message" data-pjax="true" title="Passing options to Rackspace authenticated_url">Passing options to Rackspace authenticated_url</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-08-18T04:44:19Z" is="time-ago" title="Aug 18, 2015, 10:14 AM GMT+5:30">6 months ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/.rubocop.yml" class="js-directory-link js-navigation-open" id="11a0d7906801d9dea0eccb85667ad811-9806bf71fd85c72cac4d99f6ec097c8d187bdf90" title=".rubocop.yml">.rubocop.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/8ca9e513de43d4b958651a96971f53583d8c8616" class="message" data-pjax="true" title="Add a `rubocop.yml` file with basic cops enabled">Add a `rubocop.yml` file with basic cops enabled</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-11T21:25:31Z" is="time-ago" title="Jan 12, 2016, 2:55 AM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item navigation-focus">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/.travis.yml" class="js-directory-link js-navigation-open" id="354f30a63fb0907d4ad57269548329e3-29feb30a63e2f4e146f94ef5f41b07f010adc2de" title=".travis.yml">.travis.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/45474d9a36fbc7d97bfb24843e919ad0324f4c79" class="message" data-pjax="true" title="Set `fast_finish: true` in Travis config
+
+Now, a build will finish as soon as a job has failed, or when the only
+jobs left allow failures.">Set `fast_finish: true` in Travis config</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-10T18:48:22Z" is="time-ago" title="Jan 11, 2016, 12:18 AM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/CHANGELOG.md" class="js-directory-link js-navigation-open" id="4ac32a78649ca5bdd8e0ba38b7006a1e-822a7fbbba600475a75002068d94572c74c5e493" title="CHANGELOG.md">CHANGELOG.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/b742d7fc1d095e7a2541e27bf281fd48fc142715" class="message" data-pjax="true" title="Update CHANGELOG.md to with changes from PR #1860">Update CHANGELOG.md to with changes from PR</a> <a href="https://github.com/carrierwaveuploader/carrierwave/pull/1860" class="issue-link js-issue-link" data-url="https://github.com/carrierwaveuploader/carrierwave/issues/1860" data-id="130468941" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#1860</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-02-02T13:02:50Z" is="time-ago" title="Feb 2, 2016, 6:32 PM GMT+5:30">10 days ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/CONTRIBUTING.md" class="js-directory-link js-navigation-open" id="6a3371457528722a734f3c51d9238c13-e1899c04b11e03eef77c450ebc5669b070107633" title="CONTRIBUTING.md">CONTRIBUTING.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/55f244e831e73a6869556da5ec8cb517a7fb4e11" class="message" data-pjax="true" title="Update Ruby version from CONTRIBUTING.md">Update Ruby version from CONTRIBUTING.md</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2015-12-14T14:27:42Z" is="time-ago" title="Dec 14, 2015, 7:57 PM GMT+5:30">2 months ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/Gemfile" class="js-directory-link js-navigation-open" id="8b7db4d5cc4b8f6dc8feb7030baa2478-b4e2a20bb6069d33479542fc863e7e36810e0f01" title="Gemfile">Gemfile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/06963770243bbfd2441bc81647ffae4acac8a248" class="message" data-pjax="true" title="Use https rubygems source">Use https rubygems source</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2011-12-19T17:43:46Z" is="time-ago" title="Dec 19, 2011, 11:13 PM GMT+5:30">4 years ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/README.md" class="js-directory-link js-navigation-open" id="04c6e90faac2675aa89e2176d2eec7d8-ee89ce98654ecd920506d03ed48ed02dcb5a0a18" title="README.md">README.md</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/6bbaa6cfa871d875d069c4217db8b92b85e676c8" class="message" data-pjax="true" title="Make extensions and content types white/blacklists take a single value
+
+`#content_type_whitelist` and `extension_whitelist` now takes either a
+string, a regexp, or an array of values (same thing for blacklists).">Make extensions and content types white/blacklists take a single value</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-10T18:30:05Z" is="time-ago" title="Jan 11, 2016, 12:00 AM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/Rakefile" class="js-directory-link js-navigation-open" id="52c976fc38ed2b4e3b1192f8a8e24cff-65be4c93f4deee63dca9807ef394436ef0eecdfd" title="Rakefile">Rakefile</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/f4501394b98f409720d7ccb970c2ab75fae19a24" class="message" data-pjax="true" title="Remove UTF-8 magic comments from all the Ruby files
+
+Ruby 2 made UTF-8 the default encoding, which make magic comments
+omissible.">Remove UTF-8 magic comments from all the Ruby files</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-02T15:38:59Z" is="time-ago" title="Jan 2, 2016, 9:08 PM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/carrierwave.gemspec" class="js-directory-link js-navigation-open" id="cf8402c38bbe062daa59f90ca05292d1-309abf19a2fdd97f4e0ed57e71612346200d4dfc" title="carrierwave.gemspec">carrierwave.gemspec</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/004364afbc0202eff1b50f83c2a04944b1369b8d" class="message" data-pjax="true" title="Merge pull request #1827 from mehlah/cleanup-gemspec
+
+Remove unnecessary entries from .gemspec">Merge pull request</a> <a href="https://github.com/carrierwaveuploader/carrierwave/pull/1827" class="issue-link js-issue-link" data-url="https://github.com/carrierwaveuploader/carrierwave/issues/1827" data-id="125655215" data-error-text="Failed to load issue title" data-permission-text="Issue title is private">#1827</a> <a href="https://github.com/carrierwaveuploader/carrierwave/commit/004364afbc0202eff1b50f83c2a04944b1369b8d" class="message" data-pjax="true" title="Merge pull request #1827 from mehlah/cleanup-gemspec
+
+Remove unnecessary entries from .gemspec">from mehlah/cleanup-gemspec</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2016-01-10T15:51:41Z" is="time-ago" title="Jan 10, 2016, 9:21 PM GMT+5:30">a month ago</time></span>
+          </td>
+        </tr>
+        <tr class="js-navigation-item">
+          <td class="icon">
+            <svg aria-hidden="true" class="octicon octicon-file-text" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M6 5H2v-1h4v1zM2 8h7v-1H2v1z m0 2h7v-1H2v1z m0 2h7v-1H2v1z m10-7.5v9.5c0 0.55-0.45 1-1 1H1c-0.55 0-1-0.45-1-1V2c0-0.55 0.45-1 1-1h7.5l3.5 3.5z m-1 0.5L8 2H1v12h10V5z"></path></svg>
+            <img alt="" class="spinner" height="16" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/octocat-spinner-32.gif" width="16">
+          </td>
+          <td class="content">
+            <span class="css-truncate css-truncate-target"><a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/cucumber.yml" class="js-directory-link js-navigation-open" id="60d77438370634c476a28027a52808e8-59b36d4d66a58be5ae3e0ee7b362686e438e874c" title="cucumber.yml">cucumber.yml</a></span>
+          </td>
+          <td class="message">
+            <span class="css-truncate css-truncate-target">
+                  <a href="https://github.com/carrierwaveuploader/carrierwave/commit/ec348575e4ddd201707a498545ec551d1f2b306e" class="message" data-pjax="true" title="no more more/core division, just one single gem">no more more/core division, just one single gem</a>
+            </span>
+          </td>
+          <td class="age">
+            <span class="css-truncate css-truncate-target"><time datetime="2009-02-16T20:49:33Z" is="time-ago" title="Feb 17, 2009, 2:19 AM GMT+5:30">7 years ago</time></span>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <div id="readme" class="readme boxed-group clearfix announce instapaper_body md">
+    <h3>
+      <svg aria-hidden="true" class="octicon octicon-book" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M2 5h4v1H2v-1z m0 3h4v-1H2v1z m0 2h4v-1H2v1z m11-5H9v1h4v-1z m0 2H9v1h4v-1z m0 2H9v1h4v-1z m2-6v9c0 0.55-0.45 1-1 1H8.5l-1 1-1-1H1c-0.55 0-1-0.45-1-1V3c0-0.55 0.45-1 1-1h5.5l1 1 1-1h5.5c0.55 0 1 0.45 1 1z m-8 0.5l-0.5-0.5H1v9h6V3.5z m7-0.5H8.5l-0.5 0.5v8.5h6V3z"></path></svg>
+      README.md
+    </h3>
+
+      <article class="markdown-body entry-content" itemprop="text"><h1><a id="user-content-carrierwave" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#carrierwave" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>CarrierWave</h1>
+
+<p>This gem provides a simple and extremely flexible way to upload files from Ruby applications.
+It works well with Rack based web applications, such as Ruby on Rails.</p>
+
+<p><a href="http://travis-ci.org/carrierwaveuploader/carrierwave"><img src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/68747470733a2f2f7472617669732d63692e6f72672f636172726965727761766575706c6f616465722f63617272696572776176652e7376673f6272616e63683d6d6173746572" alt="Build Status" data-canonical-src="https://travis-ci.org/carrierwaveuploader/carrierwave.svg?branch=master" style="max-width:100%;"></a>
+<a href="https://codeclimate.com/github/carrierwaveuploader/carrierwave"><img src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/687474703a2f2f696d672e736869656c64732e696f2f636f6465636c696d6174652f6769746875622f636172726965727761766575706c6f616465722f63617272696572776176652e737667" alt="Code Climate" data-canonical-src="http://img.shields.io/codeclimate/github/carrierwaveuploader/carrierwave.svg" style="max-width:100%;"></a></p>
+
+<blockquote>
+<h2><a id="user-content-carrierwave-version-disclaimer" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#carrierwave-version-disclaimer" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>carrierwave version disclaimer</h2>
+
+<p><strong><em>This README is for a branch which is still in development.
+Please switch to latest <code>0.x</code> branch for stable version.</em></strong></p>
+</blockquote>
+
+<h2><a id="user-content-information" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#information" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Information</h2>
+
+<ul>
+<li>RDoc documentation <a href="http://rubydoc.info/gems/carrierwave/frames">available on RubyDoc.info</a></li>
+<li>Source code <a href="http://github.com/carrierwaveuploader/carrierwave">available on GitHub</a></li>
+<li>More information, known limitations, and how-tos <a href="https://github.com/carrierwaveuploader/carrierwave/wiki">available on the wiki</a></li>
+</ul>
+
+<h2><a id="user-content-getting-help" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#getting-help" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Getting Help</h2>
+
+<ul>
+<li>Please ask the community on <a href="http://stackoverflow.com/">Stack Overflow</a> for help if you have any questions. Please do not post usage questions on the issue tracker.</li>
+<li>Please report bugs on the <a href="http://github.com/carrierwaveuploader/carrierwave/issues">issue tracker</a> but read the "getting help" section in the wiki first.</li>
+</ul>
+
+<h2><a id="user-content-installation" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#installation" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Installation</h2>
+
+<p>Install the latest stable release:</p>
+
+<pre><code>$ gem install carrierwave
+</code></pre>
+
+<p>In Rails, add it to your Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">'</span>carrierwave<span class="pl-pds">'</span></span></pre></div>
+
+<p>Finally, restart the server to apply the changes.</p>
+
+<p>As of version 1.0.0 (forthcoming), CarrierWave requires Rails 4.0 or higher and Ruby 2.0
+or higher. If you're on Rails 3, you should use v0.10.0.</p>
+
+<h2><a id="user-content-getting-started" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#getting-started" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Getting Started</h2>
+
+<p>Start off by generating an uploader:</p>
+
+<pre><code>rails generate uploader Avatar
+</code></pre>
+
+<p>this should give you a file in:</p>
+
+<pre><code>app/uploaders/avatar_uploader.rb
+</code></pre>
+
+<p>Check out this file for some hints on how you can customize your uploader. It
+should look something like this:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  storage <span class="pl-c1">:file</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>You can use your uploader class to store and retrieve files like this:</p>
+
+<div class="highlight highlight-source-ruby"><pre>uploader <span class="pl-k">=</span> <span class="pl-c1">AvatarUploader</span>.<span class="pl-k">new</span>
+
+uploader.store!(my_file)
+
+uploader.retrieve_from_store!(<span class="pl-s"><span class="pl-pds">'</span>my_file.png<span class="pl-pds">'</span></span>)</pre></div>
+
+<p>CarrierWave gives you a <code>store</code> for permanent storage, and a <code>cache</code> for
+temporary storage. You can use different stores, including filesystem
+and cloud storage.</p>
+
+<p>Most of the time you are going to want to use CarrierWave together with an ORM.
+It is quite simple to mount uploaders on columns in your model, so you can
+simply assign files and get going:</p>
+
+<h3><a id="user-content-activerecord" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#activerecord" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>ActiveRecord</h3>
+
+<p>Make sure you are loading CarrierWave after loading your ORM, otherwise you'll
+need to require the relevant extension manually, e.g.:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>carrierwave/orm/activerecord<span class="pl-pds">'</span></span></pre></div>
+
+<p>Add a string column to the model you want to mount the uploader by creating
+a migration:</p>
+
+<pre><code>rails g migration add_avatar_to_users avatar:string
+rake db:migrate
+</code></pre>
+
+<p>Open your model file and mount the uploader:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  mount_uploader <span class="pl-c1">:avatar</span>, <span class="pl-c1">AvatarUploader</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Now you can cache files by assigning them to the attribute, they will
+automatically be stored when the record is saved.</p>
+
+<div class="highlight highlight-source-ruby"><pre>u <span class="pl-k">=</span> <span class="pl-c1">User</span>.<span class="pl-k">new</span>
+u.avatar <span class="pl-k">=</span> params[<span class="pl-c1">:file</span>] <span class="pl-c"># Assign a file like this, or</span>
+
+<span class="pl-c"># like this</span>
+<span class="pl-c1">File</span>.open(<span class="pl-s"><span class="pl-pds">'</span>somewhere<span class="pl-pds">'</span></span>) <span class="pl-k">do </span>|<span class="pl-smi">f</span>|
+  u.avatar <span class="pl-k">=</span> f
+<span class="pl-k">end</span>
+
+u.save!
+u.avatar.url <span class="pl-c"># =&gt; '/url/to/file.png'</span>
+u.avatar.current_path <span class="pl-c"># =&gt; 'path/to/file.png'</span>
+u.avatar_identifier <span class="pl-c"># =&gt; 'file.png'</span></pre></div>
+
+<h3><a id="user-content-datamapper-mongoid-sequel" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#datamapper-mongoid-sequel" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>DataMapper, Mongoid, Sequel</h3>
+
+<p>Other ORM support has been extracted into separate gems:</p>
+
+<ul>
+<li><a href="https://github.com/carrierwaveuploader/carrierwave-datamapper">carrierwave-datamapper</a></li>
+<li><a href="https://github.com/carrierwaveuploader/carrierwave-mongoid">carrierwave-mongoid</a></li>
+<li><a href="https://github.com/carrierwaveuploader/carrierwave-sequel">carrierwave-sequel</a></li>
+</ul>
+
+<p>There are more extensions listed in <a href="https://github.com/carrierwaveuploader/carrierwave/wiki">the wiki</a></p>
+
+<h2><a id="user-content-multiple-file-uploads" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#multiple-file-uploads" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Multiple file uploads</h2>
+
+<p><strong>Note:</strong> You must specify using the master branch to enable this feature:</p>
+
+<p><code>gem 'carrierwave', github: 'carrierwaveuploader/carrierwave'</code>.</p>
+
+<p>CarrierWave also has convenient support for multiple file upload fields.</p>
+
+<h3><a id="user-content-activerecord-1" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#activerecord-1" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>ActiveRecord</h3>
+
+<p>Add a column which can store an array. This could be an array column or a JSON
+column for example. Your choice depends on what your database supports. For
+example, create a migration like this:</p>
+
+<pre><code>rails g migration add_avatars_to_users avatars:json
+rake db:migrate
+</code></pre>
+
+<p>Open your model file and mount the uploader:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User<span class="pl-e"> &lt; ActiveRecord::Base</span></span>
+  mount_uploaders <span class="pl-c1">:avatars</span>, <span class="pl-c1">AvatarUploader</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Make sure your file input fields are set up as multiple file fields. For
+example in Rails you'll want to do something like this:</p>
+
+<div class="highlight highlight-text-html-erb"><pre><span class="pl-pse">&lt;%=</span><span class="pl-s1"> form.file_field <span class="pl-c1">:avatars</span>, <span class="pl-c1">multiple:</span> <span class="pl-c1">true</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<p>Also, make sure your upload controller permits the multiple file upload attribute, <em>pointing to an empty array in a hash</em>. For example:</p>
+
+<div class="highlight highlight-source-ruby"><pre>params.<span class="pl-k">require</span>(<span class="pl-c1">:user</span>).permit(<span class="pl-c1">:email</span>, <span class="pl-c1">:first_name</span>, <span class="pl-c1">:last_name</span>, {<span class="pl-c1">avatars:</span> []})</pre></div>
+
+<p>Now you can select multiple files in the upload dialog (e.g. SHIFT+SELECT), and they will
+automatically be stored when the record is saved.</p>
+
+<div class="highlight highlight-source-ruby"><pre>u <span class="pl-k">=</span> <span class="pl-c1">User</span>.<span class="pl-k">new</span>(params[<span class="pl-c1">:user</span>])
+u.save!
+u.avatars[<span class="pl-c1">0</span>].url <span class="pl-c"># =&gt; '/url/to/file.png'</span>
+u.avatars[<span class="pl-c1">0</span>].current_path <span class="pl-c"># =&gt; 'path/to/file.png'</span>
+u.avatars[<span class="pl-c1">0</span>].identifier <span class="pl-c"># =&gt; 'file.png'</span></pre></div>
+
+<h2><a id="user-content-changing-the-storage-directory" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#changing-the-storage-directory" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Changing the storage directory</h2>
+
+<p>In order to change where uploaded files are put, just override the <code>store_dir</code>
+method:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">store_dir</span>
+    <span class="pl-s"><span class="pl-pds">'</span>public/my/upload/directory<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>This works for the file storage as well as Amazon S3 and Rackspace Cloud Files.
+Define <code>store_dir</code> as <code>nil</code> if you'd like to store files at the root level.</p>
+
+<p>If you store files outside the project root folder, you may want to define <code>cache_dir</code> in the same way:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">cache_dir</span>
+    <span class="pl-s"><span class="pl-pds">'</span>/tmp/projectname-cache<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-securing-uploads" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#securing-uploads" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Securing uploads</h2>
+
+<p>Certain files might be dangerous if uploaded to the wrong location, such as PHP
+files or other script files. CarrierWave allows you to specify a whitelist of
+allowed extensions or content types.</p>
+
+<p>If you're mounting the uploader, uploading a file with the wrong extension will
+make the record invalid instead. Otherwise, an error is raised.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">extension_whitelist</span>
+    <span class="pl-s"><span class="pl-pds">%w(</span>jpg jpeg gif png<span class="pl-pds">)</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>The same thing could be done using content types.
+Let's say we need an uploader that accepts only images. This can be done like this</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">content_type_whitelist</span>
+    <span class="pl-sr"><span class="pl-pds">/</span>image<span class="pl-cce">\/</span><span class="pl-pds">/</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>You can use a blacklist to reject content types.
+Let's say we need an uploader that reject JSON files. This can be done like this</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">NoJsonUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">content_type_blacklist</span>
+    [<span class="pl-s"><span class="pl-pds">'</span>application/text<span class="pl-pds">'</span></span>, <span class="pl-s"><span class="pl-pds">'</span>application/json<span class="pl-pds">'</span></span>]
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<h3><a id="user-content-filenames-and-unicode-chars" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#filenames-and-unicode-chars" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Filenames and unicode chars</h3>
+
+<p>Another security issue you should care for is the file names (see
+<a href="http://guides.rubyonrails.org/security.html#file-uploads">Ruby On Rails Security Guide</a>).
+By default, CarrierWave provides only English letters, arabic numerals and some symbols as
+white-listed characters in the file name. If you want to support local scripts (Cyrillic letters, letters with diacritics and so on), you
+have to override <code>sanitize_regexp</code> method. It should return regular expression which would match
+all <em>non</em>-allowed symbols.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>::<span class="pl-c1">SanitizedFile</span>.sanitize_regexp <span class="pl-k">=</span> <span class="pl-sr"><span class="pl-pds">/</span><span class="pl-pds">[^[:word:]</span><span class="pl-cce">\.\-\+</span>]<span class="pl-pds">/</span></span></pre></div>
+
+<p>Also make sure that allowing non-latin characters won't cause a compatibility issue with a third-party
+plugins or client-side software.</p>
+
+<h2><a id="user-content-setting-the-content-type" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#setting-the-content-type" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Setting the content type</h2>
+
+<p>As of v0.10.0, the <code>mime-types</code> gem is a runtime dependency and the content type is set automatically.
+You no longer need to do this manually.</p>
+
+<h2><a id="user-content-adding-versions" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#adding-versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Adding versions</h2>
+
+<p>Often you'll want to add different versions of the same file. The classic example is image thumbnails. There is built in support for this*:</p>
+
+<p><em>Note:</em> You must have Imagemagick and MiniMagick installed to do image resizing. MiniMagick is a Ruby interface for Imagemagick which is a C program. This is why MiniMagick fails on 'bundle install' without Imagemagick installed.</p>
+
+<p>Some documentation refers to RMagick instead of MiniMagick but MiniMagick is recommended.</p>
+
+<p>To install Imagemagick on OSX with homebrew type the following:</p>
+
+<pre><code>$ brew install imagemagick
+</code></pre>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">MiniMagick</span>
+
+  process <span class="pl-c1">resize_to_fit:</span> [<span class="pl-c1">800</span>, <span class="pl-c1">800</span>]
+
+  version <span class="pl-c1">:thumb</span> <span class="pl-k">do</span>
+    process <span class="pl-c1">resize_to_fill:</span> [<span class="pl-c1">200</span>,<span class="pl-c1">200</span>]
+  <span class="pl-k">end</span>
+
+<span class="pl-k">end</span></pre></div>
+
+<p>When this uploader is used, an uploaded image would be scaled to be no larger
+than 800 by 800 pixels. A version called thumb is then created, which is scaled
+and cropped to exactly 200 by 200 pixels. The uploader could be used like this:</p>
+
+<div class="highlight highlight-source-ruby"><pre>uploader <span class="pl-k">=</span> <span class="pl-c1">AvatarUploader</span>.<span class="pl-k">new</span>
+uploader.store!(my_file)                              <span class="pl-c"># size: 1024x768</span>
+
+uploader.url <span class="pl-c"># =&gt; '/url/to/my_file.png'               # size: 800x600</span>
+uploader.thumb.url <span class="pl-c"># =&gt; '/url/to/thumb_my_file.png'   # size: 200x200</span></pre></div>
+
+<p>One important thing to remember is that process is called <em>before</em> versions are
+created. This can cut down on processing cost.</p>
+
+<p>It is possible to nest versions within versions:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+
+  version <span class="pl-c1">:animal</span> <span class="pl-k">do</span>
+    version <span class="pl-c1">:human</span>
+    version <span class="pl-c1">:monkey</span>
+    version <span class="pl-c1">:llama</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<h3><a id="user-content-conditional-versions" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#conditional-versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Conditional versions</h3>
+
+<p>Occasionally you want to restrict the creation of versions on certain
+properties within the model or based on the picture itself.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+
+  version <span class="pl-c1">:human</span>, <span class="pl-c1">if:</span> <span class="pl-c1">:is_human?</span>
+  version <span class="pl-c1">:monkey</span>, <span class="pl-c1">if:</span> <span class="pl-c1">:is_monkey?</span>
+  version <span class="pl-c1">:banner</span>, <span class="pl-c1">if:</span> <span class="pl-c1">:is_landscape?</span>
+
+<span class="pl-k">private</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">is_human?</span> <span class="pl-smi">picture</span>
+    model.can_program?(<span class="pl-c1">:ruby</span>)
+  <span class="pl-k">end</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">is_monkey?</span> <span class="pl-smi">picture</span>
+    model.favorite_food <span class="pl-k">==</span> <span class="pl-s"><span class="pl-pds">'</span>banana<span class="pl-pds">'</span></span>
+  <span class="pl-k">end</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">is_landscape?</span> <span class="pl-smi">picture</span>
+    image <span class="pl-k">=</span> <span class="pl-c1">MiniMagick</span>::<span class="pl-c1">Image</span>.open(picture.path)
+    image[<span class="pl-c1">:width</span>] <span class="pl-k">&gt;</span> image[<span class="pl-c1">:height</span>]
+  <span class="pl-k">end</span>
+
+<span class="pl-k">end</span></pre></div>
+
+<p>The <code>model</code> variable points to the instance object the uploader is attached to.</p>
+
+<h3><a id="user-content-create-versions-from-existing-versions" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#create-versions-from-existing-versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Create versions from existing versions</h3>
+
+<p>For performance reasons, it is often useful to create versions from existing ones
+instead of using the original file. If your uploader generates several versions
+where the next is smaller than the last, it will take less time to generate from
+a smaller, already processed image.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+
+  version <span class="pl-c1">:thumb</span> <span class="pl-k">do</span>
+    process <span class="pl-c1">resize_to_fill:</span> [<span class="pl-c1">280</span>, <span class="pl-c1">280</span>]
+  <span class="pl-k">end</span>
+
+  version <span class="pl-c1">:small_thumb</span>, <span class="pl-c1">from_version:</span> <span class="pl-c1">:thumb</span> <span class="pl-k">do</span>
+    process <span class="pl-c1">resize_to_fill:</span> [<span class="pl-c1">20</span>, <span class="pl-c1">20</span>]
+  <span class="pl-k">end</span>
+
+<span class="pl-k">end</span></pre></div>
+
+<p>The option <code>:from_version</code> uses the file cached in the <code>:thumb</code> version instead
+of the original version, potentially resulting in faster processing.</p>
+
+<h2><a id="user-content-making-uploads-work-across-form-redisplays" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#making-uploads-work-across-form-redisplays" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Making uploads work across form redisplays</h2>
+
+<p>Often you'll notice that uploaded files disappear when a validation fails.
+CarrierWave has a feature that makes it easy to remember the uploaded file even
+in that case. Suppose your <code>user</code> model has an uploader mounted on <code>avatar</code>
+file, just add a hidden field called <code>avatar_cache</code> (don't forget to add it to
+the attr_accessible list as necessary). In Rails, this would look like this:</p>
+
+<div class="highlight highlight-text-html-erb"><pre><span class="pl-pse">&lt;%=</span><span class="pl-s1"> form_for <span class="pl-smi">@user</span>, <span class="pl-c1">html:</span> { <span class="pl-c1">multipart:</span> <span class="pl-c1">true</span> } <span class="pl-k">do </span>|<span class="pl-smi">f</span>| </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">label</span>&gt;My Avatar&lt;/<span class="pl-ent">label</span>&gt;
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.file_field <span class="pl-c1">:avatar</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.hidden_field <span class="pl-c1">:avatar_cache</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;/<span class="pl-ent">p</span>&gt;
+<span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<p>It might be a good idea to show the user that a file has been uploaded, in the
+case of images, a small thumbnail would be a good indicator:</p>
+
+<div class="highlight highlight-text-html-erb"><pre><span class="pl-pse">&lt;%=</span><span class="pl-s1"> form_for <span class="pl-smi">@user</span>, <span class="pl-c1">html:</span> { <span class="pl-c1">multipart:</span> <span class="pl-c1">true</span> } <span class="pl-k">do </span>|<span class="pl-smi">f</span>| </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">label</span>&gt;My Avatar&lt;/<span class="pl-ent">label</span>&gt;
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> image_tag(<span class="pl-smi">@user</span>.avatar_url) <span class="pl-k">if</span> <span class="pl-smi">@user</span>.avatar? </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.file_field <span class="pl-c1">:avatar</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.hidden_field <span class="pl-c1">:avatar_cache</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;/<span class="pl-ent">p</span>&gt;
+<span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<h2><a id="user-content-removing-uploaded-files" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#removing-uploaded-files" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Removing uploaded files</h2>
+
+<p>If you want to remove a previously uploaded file on a mounted uploader, you can
+easily add a checkbox to the form which will remove the file when checked.</p>
+
+<div class="highlight highlight-text-html-erb"><pre><span class="pl-pse">&lt;%=</span><span class="pl-s1"> form_for <span class="pl-smi">@user</span>, <span class="pl-c1">html:</span> { <span class="pl-c1">multipart:</span> <span class="pl-c1">true</span> } <span class="pl-k">do </span>|<span class="pl-smi">f</span>| </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">label</span>&gt;My Avatar&lt;/<span class="pl-ent">label</span>&gt;
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> image_tag(<span class="pl-smi">@user</span>.avatar_url) <span class="pl-k">if</span> <span class="pl-smi">@user</span>.avatar? </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.file_field <span class="pl-c1">:avatar</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;/<span class="pl-ent">p</span>&gt;
+
+  &lt;<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">label</span>&gt;
+      <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.check_box <span class="pl-c1">:remove_avatar</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+      Remove avatar
+    &lt;/<span class="pl-ent">label</span>&gt;
+  &lt;/<span class="pl-ent">p</span>&gt;
+<span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<p>If you want to remove the file manually, you can call <code>remove_avatar!</code>, then save the object.</p>
+
+<div class="highlight highlight-text-html-erb"><pre>@user.remove_avatar!
+@user.save
+#=&gt; true</pre></div>
+
+<h2><a id="user-content-uploading-files-from-a-remote-location" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#uploading-files-from-a-remote-location" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Uploading files from a remote location</h2>
+
+<p>Your users may find it convenient to upload a file from a location on the Internet
+via a URL. CarrierWave makes this simple, just add the appropriate attribute to your
+form and you're good to go:</p>
+
+<div class="highlight highlight-text-html-erb"><pre><span class="pl-pse">&lt;%=</span><span class="pl-s1"> form_for <span class="pl-smi">@user</span>, <span class="pl-c1">html:</span> { <span class="pl-c1">multipart:</span> <span class="pl-c1">true</span> } <span class="pl-k">do </span>|<span class="pl-smi">f</span>| </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;<span class="pl-ent">p</span>&gt;
+    &lt;<span class="pl-ent">label</span>&gt;My Avatar URL:&lt;/<span class="pl-ent">label</span>&gt;
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> image_tag(<span class="pl-smi">@user</span>.avatar_url) <span class="pl-k">if</span> <span class="pl-smi">@user</span>.avatar? </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+    <span class="pl-pse">&lt;%=</span><span class="pl-s1"> f.text_field <span class="pl-c1">:remote_avatar_url</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span>
+  &lt;/<span class="pl-ent">p</span>&gt;
+<span class="pl-pse">&lt;%</span><span class="pl-s1"> <span class="pl-k">end</span> </span><span class="pl-pse"><span class="pl-s1">%</span>&gt;</span></pre></div>
+
+<p>If you're using ActiveRecord, CarrierWave will indicate invalid URLs and download
+failures automatically with attribute validation errors. If you aren't, or you
+disable CarrierWave's <code>validate_download</code> option, you'll need to handle those
+errors yourself.</p>
+
+<h2><a id="user-content-providing-a-default-url" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#providing-a-default-url" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Providing a default URL</h2>
+
+<p>In many cases, especially when working with images, it might be a good idea to
+provide a default url, a fallback in case no file has been uploaded. You can do
+this easily by overriding the <code>default_url</code> method in your uploader:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">default_url</span>(<span class="pl-k">*</span><span class="pl-smi">args</span>)
+    <span class="pl-s"><span class="pl-pds">"</span>/images/fallback/<span class="pl-pds">"</span></span> <span class="pl-k">+</span> [version_name, <span class="pl-s"><span class="pl-pds">"</span>default.png<span class="pl-pds">"</span></span>].compact.join(<span class="pl-s"><span class="pl-pds">'</span>_<span class="pl-pds">'</span></span>)
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Or if you are using the Rails asset pipeline:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">default_url</span>(<span class="pl-k">*</span><span class="pl-smi">args</span>)
+    <span class="pl-c1">ActionController</span>::<span class="pl-c1">Base</span>.helpers.asset_path(<span class="pl-s"><span class="pl-pds">"</span>fallback/<span class="pl-pds">"</span></span> <span class="pl-k">+</span> [version_name, <span class="pl-s"><span class="pl-pds">"</span>default.png<span class="pl-pds">"</span></span>].compact.join(<span class="pl-s"><span class="pl-pds">'</span>_<span class="pl-pds">'</span></span>))
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-recreating-versions" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#recreating-versions" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Recreating versions</h2>
+
+<p>You might come to a situation where you want to retroactively change a version
+or add a new one. You can use the <code>recreate_versions!</code> method to recreate the
+versions from the base file. This uses a naive approach which will re-upload and
+process the specified version or all versions, if none is passed as an argument.</p>
+
+<p>When you are generating random unique filenames you have to call <code>save!</code> on
+the model after using <code>recreate_versions!</code>. This is necessary because
+<code>recreate_versions!</code> doesn't save the new filename to the database. Calling
+<code>save!</code> yourself will prevent that the database and file system are running
+out of sync.</p>
+
+<div class="highlight highlight-source-ruby"><pre>instance <span class="pl-k">=</span> <span class="pl-c1">MyUploader</span>.<span class="pl-k">new</span>
+instance.recreate_versions!(<span class="pl-c1">:thumb</span>, <span class="pl-c1">:large</span>)</pre></div>
+
+<p>Or on a mounted uploader:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">User</span>.find_each <span class="pl-k">do </span>|<span class="pl-smi">user</span>|
+  user.avatar.recreate_versions!
+<span class="pl-k">end</span></pre></div>
+
+<p>Note: <code>recreate_versions!</code> will throw an exception on records without an image. To avoid this, scope the records to those with images or check if an image exists within the block. If you're using ActiveRecord, recreating versions for a user avatar might look like this:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">User</span>.find_each <span class="pl-k">do </span>|<span class="pl-smi">user</span>|
+  user.avatar.recreate_versions! <span class="pl-k">if</span> user.avatar?
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-configuring-carrierwave" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#configuring-carrierwave" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Configuring CarrierWave</h2>
+
+<p>CarrierWave has a broad range of configuration options, which you can configure,
+both globally and on a per-uploader basis:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.permissions <span class="pl-k">=</span> <span class="pl-c1">0666</span>
+  config.directory_permissions <span class="pl-k">=</span> <span class="pl-c1">0777</span>
+  config.storage <span class="pl-k">=</span> <span class="pl-c1">:file</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Or alternatively:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  permissions <span class="pl-c1">0777</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>If you're using Rails, create an initializer for this:</p>
+
+<pre><code>config/initializers/carrierwave.rb
+</code></pre>
+
+<p>If you want CarrierWave to fail noisily in development, you can change these configs in your environment file:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.ignore_integrity_errors <span class="pl-k">=</span> <span class="pl-c1">false</span>
+  config.ignore_processing_errors <span class="pl-k">=</span> <span class="pl-c1">false</span>
+  config.ignore_download_errors <span class="pl-k">=</span> <span class="pl-c1">false</span>
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-testing-with-carrierwave" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#testing-with-carrierwave" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Testing with CarrierWave</h2>
+
+<p>It's a good idea to test your uploaders in isolation. In order to speed up your
+tests, it's recommended to switch off processing in your tests, and to use the
+file storage. In Rails you could do that by adding an initializer with:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">if</span> <span class="pl-c1">Rails</span>.env.test? <span class="pl-k">or</span> <span class="pl-c1">Rails</span>.env.cucumber?
+  <span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+    config.storage <span class="pl-k">=</span> <span class="pl-c1">:file</span>
+    config.enable_processing <span class="pl-k">=</span> <span class="pl-c1">false</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Remember, if you have already set <code>storage :something</code> in your uploader, the <code>storage</code>
+setting from this initializer will be ignored.</p>
+
+<p>If you need to test your processing, you should test it in isolation, and enable
+processing only for those tests that need it.</p>
+
+<p>CarrierWave comes with some RSpec matchers which you may find useful:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">'</span>carrierwave/test/matchers<span class="pl-pds">'</span></span>
+
+describe <span class="pl-c1">MyUploader</span> <span class="pl-k">do</span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">Test</span>::<span class="pl-c1">Matchers</span>
+
+  before <span class="pl-k">do</span>
+    <span class="pl-c1">MyUploader</span>.enable_processing <span class="pl-k">=</span> <span class="pl-c1">true</span>
+    <span class="pl-smi">@uploader</span> <span class="pl-k">=</span> <span class="pl-c1">MyUploader</span>.<span class="pl-k">new</span>(<span class="pl-smi">@user</span>, <span class="pl-c1">:avatar</span>)
+
+    <span class="pl-c1">File</span>.open(path_to_file) <span class="pl-k">do </span>|<span class="pl-smi">f</span>|
+      <span class="pl-smi">@uploader</span>.store!(f)
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span>
+
+  after <span class="pl-k">do</span>
+    <span class="pl-c1">MyUploader</span>.enable_processing <span class="pl-k">=</span> <span class="pl-c1">false</span>
+    <span class="pl-smi">@uploader</span>.remove!
+  <span class="pl-k">end</span>
+
+  context <span class="pl-s"><span class="pl-pds">'</span>the thumb version<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+    it <span class="pl-s"><span class="pl-pds">"</span>should scale down a landscape image to be exactly 64 by 64 pixels<span class="pl-pds">"</span></span> <span class="pl-k">do</span>
+      <span class="pl-smi">@uploader</span>.thumb.should have_dimensions(<span class="pl-c1">64</span>, <span class="pl-c1">64</span>)
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span>
+
+  context <span class="pl-s"><span class="pl-pds">'</span>the small version<span class="pl-pds">'</span></span> <span class="pl-k">do</span>
+    it <span class="pl-s"><span class="pl-pds">"</span>should scale down a landscape image to fit within 200 by 200 pixels<span class="pl-pds">"</span></span> <span class="pl-k">do</span>
+      <span class="pl-smi">@uploader</span>.small.should be_no_larger_than(<span class="pl-c1">200</span>, <span class="pl-c1">200</span>)
+    <span class="pl-k">end</span>
+  <span class="pl-k">end</span>
+
+  it <span class="pl-s"><span class="pl-pds">"</span>should make the image readable only to the owner and not executable<span class="pl-pds">"</span></span> <span class="pl-k">do</span>
+    <span class="pl-smi">@uploader</span>.should have_permissions(<span class="pl-c1">0600</span>)
+  <span class="pl-k">end</span>
+
+  it <span class="pl-s"><span class="pl-pds">"</span>should be the correct format<span class="pl-pds">"</span></span> <span class="pl-k">do</span>
+    <span class="pl-smi">@uploader</span>.should be_format(<span class="pl-s"><span class="pl-pds">'</span>png<span class="pl-pds">'</span></span>)
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Setting the enable_processing flag on an uploader will prevent any of the versions from processing as well.
+Processing can be enabled for a single version by setting the processing flag on the version like so:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-smi">@uploader</span>.thumb.enable_processing <span class="pl-k">=</span> <span class="pl-c1">true</span></pre></div>
+
+<h2><a id="user-content-fog" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#fog" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Fog</h2>
+
+<p>If you want to use fog you must add in your CarrierWave initializer the
+following lines</p>
+
+<div class="highlight highlight-source-ruby"><pre>config.fog_provider <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>fog<span class="pl-pds">'</span></span> <span class="pl-c"># 'fog/aws' etc. Defaults to 'fog'</span>
+config.fog_credentials <span class="pl-k">=</span> { ... } <span class="pl-c"># Provider specific credentials</span></pre></div>
+
+<h2><a id="user-content-using-amazon-s3" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#using-amazon-s3" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Using Amazon S3</h2>
+
+<p><a href="http://github.com/fog/fog-aws">Fog AWS</a> is used to support Amazon S3. Ensure you have it in your Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>fog-aws<span class="pl-pds">"</span></span></pre></div>
+
+<p>You'll need to provide your fog_credentials and a fog_directory (also known as a bucket) in an initializer.
+For the sake of performance it is assumed that the directory already exists, so please create it if need be.
+You can also pass in additional options, as documented fully in lib/carrierwave/storage/fog.rb. Here's a full example:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.fog_provider <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>fog/aws<span class="pl-pds">'</span></span>                        <span class="pl-c"># required</span>
+  config.fog_credentials <span class="pl-k">=</span> {
+    <span class="pl-c1">provider:</span>              <span class="pl-s"><span class="pl-pds">'</span>AWS<span class="pl-pds">'</span></span>,                        <span class="pl-c"># required</span>
+    <span class="pl-c1">aws_access_key_id:</span>     <span class="pl-s"><span class="pl-pds">'</span>xxx<span class="pl-pds">'</span></span>,                        <span class="pl-c"># required</span>
+    <span class="pl-c1">aws_secret_access_key:</span> <span class="pl-s"><span class="pl-pds">'</span>yyy<span class="pl-pds">'</span></span>,                        <span class="pl-c"># required</span>
+    <span class="pl-c1">region:</span>                <span class="pl-s"><span class="pl-pds">'</span>eu-west-1<span class="pl-pds">'</span></span>,                  <span class="pl-c"># optional, defaults to 'us-east-1'</span>
+    <span class="pl-c1">host:</span>                  <span class="pl-s"><span class="pl-pds">'</span>s3.example.com<span class="pl-pds">'</span></span>,             <span class="pl-c"># optional, defaults to nil</span>
+    <span class="pl-c1">endpoint:</span>              <span class="pl-s"><span class="pl-pds">'</span>https://s3.example.com:8080<span class="pl-pds">'</span></span> <span class="pl-c"># optional, defaults to nil</span>
+  }
+  config.fog_directory  <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>name_of_directory<span class="pl-pds">'</span></span>                          <span class="pl-c"># required</span>
+  config.fog_public     <span class="pl-k">=</span> <span class="pl-c1">false</span>                                        <span class="pl-c"># optional, defaults to true</span>
+  config.fog_attributes <span class="pl-k">=</span> { <span class="pl-s"><span class="pl-pds">'</span>Cache-Control<span class="pl-pds">'</span></span> =&gt; <span class="pl-s"><span class="pl-pds">"</span>max-age=<span class="pl-pse">#{</span><span class="pl-s1"><span class="pl-c1">365</span>.day.to_i</span><span class="pl-pse"><span class="pl-s1">}</span></span><span class="pl-pds">"</span></span> } <span class="pl-c"># optional, defaults to {}</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>In your uploader, set the storage to :fog</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  storage <span class="pl-c1">:fog</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>That's it! You can still use the <code>CarrierWave::Uploader#url</code> method to return the url to the file on Amazon S3.</p>
+
+<h2><a id="user-content-using-rackspace-cloud-files" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#using-rackspace-cloud-files" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Using Rackspace Cloud Files</h2>
+
+<p><a href="http://github.com/fog/fog">Fog</a> is used to support Rackspace Cloud Files. Ensure you have it in your Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>fog<span class="pl-pds">"</span></span></pre></div>
+
+<p>You'll need to configure a directory (also known as a container), username and API key in the initializer.
+For the sake of performance it is assumed that the directory already exists, so please create it if need be.</p>
+
+<p>Using a US-based account:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.fog_provider <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>fog/rackspace/storage<span class="pl-pds">"</span></span>   <span class="pl-c"># optional, defaults to "fog"</span>
+  config.fog_credentials <span class="pl-k">=</span> {
+    <span class="pl-c1">provider:</span>           <span class="pl-s"><span class="pl-pds">'</span>Rackspace<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_username:</span> <span class="pl-s"><span class="pl-pds">'</span>xxxxxx<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_api_key:</span>  <span class="pl-s"><span class="pl-pds">'</span>yyyyyy<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_region:</span>   <span class="pl-c1">:ord</span>                      <span class="pl-c"># optional, defaults to :dfw</span>
+  }
+  config.fog_directory <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>name_of_directory<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Using a UK-based account:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.fog_provider <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>fog/rackspace/storage<span class="pl-pds">"</span></span>   <span class="pl-c"># optional, defaults to "fog"</span>
+  config.fog_credentials <span class="pl-k">=</span> {
+    <span class="pl-c1">provider:</span>           <span class="pl-s"><span class="pl-pds">'</span>Rackspace<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_username:</span> <span class="pl-s"><span class="pl-pds">'</span>xxxxxx<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_api_key:</span>  <span class="pl-s"><span class="pl-pds">'</span>yyyyyy<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">rackspace_auth_url:</span> <span class="pl-c1">Fog</span>::<span class="pl-c1">Rackspace</span>::<span class="pl-c1">UK_AUTH_ENDPOINT</span>,
+    <span class="pl-c1">rackspace_region:</span>   <span class="pl-c1">:lon</span>
+  }
+  config.fog_directory <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>name_of_directory<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+
+<p>You can optionally include your CDN host name in the configuration.
+This is <em>highly</em> recommended, as without it every request requires a lookup
+of this information.</p>
+
+<div class="highlight highlight-source-ruby"><pre>config.asset_host <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">"</span>http://c000000.cdn.rackspacecloud.com<span class="pl-pds">"</span></span></pre></div>
+
+<p>In your uploader, set the storage to :fog</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  storage <span class="pl-c1">:fog</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>That's it! You can still use the <code>CarrierWave::Uploader#url</code> method to return
+the url to the file on Rackspace Cloud Files.</p>
+
+<h2><a id="user-content-using-google-storage-for-developers" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#using-google-storage-for-developers" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Using Google Storage for Developers</h2>
+
+<p><a href="http://github.com/fog/fog-google">Fog</a> is used to support Google Storage for Developers. Ensure you have it in your Gemfile:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>fog-google<span class="pl-pds">"</span></span></pre></div>
+
+<p>You'll need to configure a directory (also known as a bucket), access key id and secret access key in the initializer.
+For the sake of performance it is assumed that the directory already exists, so please create it if need be.</p>
+
+<p>Sign up <a href="http://gs-signup-redirect.appspot.com/">here</a> and get your credentials <a href="https://storage.cloud.google.com/m">here</a>
+under the section “Interoperable Access”.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.fog_provider <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>fog-google<span class="pl-pds">'</span></span>                        <span class="pl-c"># required</span>
+  config.fog_credentials <span class="pl-k">=</span> {
+    <span class="pl-c1">provider:</span>                         <span class="pl-s"><span class="pl-pds">'</span>Google<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">google_storage_access_key_id:</span>     <span class="pl-s"><span class="pl-pds">'</span>xxxxxx<span class="pl-pds">'</span></span>,
+    <span class="pl-c1">google_storage_secret_access_key:</span> <span class="pl-s"><span class="pl-pds">'</span>yyyyyy<span class="pl-pds">'</span></span>
+  }
+  config.fog_directory <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>name_of_directory<span class="pl-pds">'</span></span>
+<span class="pl-k">end</span></pre></div>
+
+<p>In your uploader, set the storage to :fog</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  storage <span class="pl-c1">:fog</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>That's it! You can still use the <code>CarrierWave::Uploader#url</code> method to return
+the url to the file on Google.</p>
+
+<h2><a id="user-content-optimized-loading-of-fog" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#optimized-loading-of-fog" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Optimized Loading of Fog</h2>
+
+<p>Since Carrierwave doesn't know which parts of Fog you intend to use, it will just load the entire library (unless you use e.g. [<code>fog-aws</code>, <code>fog-google</code>] instead of fog proper). If you prefer to load fewer classes into your application, you need to load those parts of Fog yourself <em>before</em> loading CarrierWave in your Gemfile.  Ex:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>fog<span class="pl-pds">"</span></span>, <span class="pl-s"><span class="pl-pds">"</span>~&gt; 1.27<span class="pl-pds">"</span></span>, <span class="pl-c1">require:</span> <span class="pl-s"><span class="pl-pds">"</span>fog/rackspace/storage<span class="pl-pds">"</span></span>
+<span class="pl-k">gem</span> <span class="pl-s"><span class="pl-pds">"</span>carrierwave<span class="pl-pds">"</span></span></pre></div>
+
+<p>A couple of notes about versions:</p>
+
+<ul>
+<li>This functionality was introduced in Fog v1.20.</li>
+<li>This functionality is slated for CarrierWave v1.0.0.</li>
+</ul>
+
+<p>If you're not relying on Gemfile entries alone and are requiring "carrierwave" anywhere, ensure you require "fog/rackspace/storage" before it.  Ex:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">"</span>fog/rackspace/storage<span class="pl-pds">"</span></span>
+<span class="pl-k">require</span> <span class="pl-s"><span class="pl-pds">"</span>carrierwave<span class="pl-pds">"</span></span></pre></div>
+
+<p>Beware that this specific require is only needed when working with a fog provider that was not extracted to its own gem yet.
+A list of the extracted providers can be found in the page of the <code>fog</code> organizations <a href="https://github.com/fog">here</a>.</p>
+
+<p>When in doubt, inspect <code>Fog.constants</code> to see what has been loaded.</p>
+
+<h2><a id="user-content-dynamic-asset-host" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#dynamic-asset-host" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Dynamic Asset Host</h2>
+
+<p>The <code>asset_host</code> config property can be assigned a proc (or anything that responds to <code>call</code>) for generating the host dynamically. The proc-compliant object gets an instance of the current <code>CarrierWave::Storage::Fog::File</code> or <code>CarrierWave::SanitizedFile</code> as its only argument.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-c1">CarrierWave</span>.configure <span class="pl-k">do </span>|<span class="pl-smi">config</span>|
+  config.asset_host <span class="pl-k">=</span> proc <span class="pl-k">do </span>|<span class="pl-smi">file</span>|
+    identifier <span class="pl-k">=</span> <span class="pl-c"># some logic</span>
+    <span class="pl-s"><span class="pl-pds">"</span>http://<span class="pl-pse">#{</span><span class="pl-s1">identifier</span><span class="pl-pse"><span class="pl-s1">}</span></span>.cdn.rackspacecloud.com<span class="pl-pds">"</span></span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-using-rmagick" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#using-rmagick" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Using RMagick</h2>
+
+<p>If you're uploading images, you'll probably want to manipulate them in some way,
+you might want to create thumbnail images for example. CarrierWave comes with a
+small library to make manipulating images with RMagick easier, you'll need to
+include it in your Uploader:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">RMagick</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>The RMagick module gives you a few methods, like
+<code>CarrierWave::RMagick#resize_to_fill</code> which manipulate the image file in some
+way. You can set a <code>process</code> callback, which will call that method any time a
+file is uploaded.
+There is a demonstration of convert here.
+Convert will only work if the file has the same file extension, thus the use of the filename method.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">RMagick</span>
+
+  process <span class="pl-c1">resize_to_fill:</span> [<span class="pl-c1">200</span>, <span class="pl-c1">200</span>]
+  process <span class="pl-c1">convert:</span> <span class="pl-s"><span class="pl-pds">'</span>png<span class="pl-pds">'</span></span>
+
+  <span class="pl-k">def</span> <span class="pl-en">filename</span>
+    <span class="pl-k">super</span>.chomp(<span class="pl-c1">File</span>.extname(<span class="pl-k">super</span>)) <span class="pl-k">+</span> <span class="pl-s"><span class="pl-pds">'</span>.png<span class="pl-pds">'</span></span> <span class="pl-k">if</span> original_filename.present?
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Check out the manipulate! method, which makes it easy for you to write your own
+manipulation methods.</p>
+
+<h2><a id="user-content-using-minimagick" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#using-minimagick" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Using MiniMagick</h2>
+
+<p>MiniMagick is similar to RMagick but performs all the operations using the 'mogrify'
+command which is part of the standard ImageMagick kit. This allows you to have the power
+of ImageMagick without having to worry about installing all the RMagick libraries.</p>
+
+<p>See the MiniMagick site for more details:</p>
+
+<p><a href="https://github.com/minimagick/minimagick">https://github.com/minimagick/minimagick</a></p>
+
+<p>And the ImageMagick command line options for more for whats on offer:</p>
+
+<p><a href="http://www.imagemagick.org/script/command-line-options.php">http://www.imagemagick.org/script/command-line-options.php</a></p>
+
+<p>Currently, the MiniMagick carrierwave processor provides exactly the same methods as
+for the RMagick processor.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">MiniMagick</span>
+
+  process <span class="pl-c1">resize_to_fill:</span> [<span class="pl-c1">200</span>, <span class="pl-c1">200</span>]
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-migrating-from-paperclip" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#migrating-from-paperclip" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Migrating from Paperclip</h2>
+
+<p>If you are using Paperclip, you can use the provided compatibility module:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">AvatarUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">include</span> <span class="pl-c1">CarrierWave</span>::<span class="pl-c1">Compatibility</span>::<span class="pl-c1">Paperclip</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>See the documentation for <code>CarrierWave::Compatibility::Paperclip</code> for more
+details.</p>
+
+<p>Be sure to use mount_on to specify the correct column:</p>
+
+<div class="highlight highlight-source-ruby"><pre>mount_uploader <span class="pl-c1">:avatar</span>, <span class="pl-c1">AvatarUploader</span>, <span class="pl-c1">mount_on:</span> <span class="pl-c1">:avatar_file_name</span></pre></div>
+
+<h2><a id="user-content-i18n" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#i18n" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>I18n</h2>
+
+<p>The Active Record validations use the Rails i18n framework. Add these keys to
+your translations file:</p>
+
+<div class="highlight highlight-source-yaml"><pre><span class="pl-s"><span class="pl-ent">errors:</span></span>
+  <span class="pl-s"><span class="pl-ent">messages:</span></span>
+    <span class="pl-s"><span class="pl-ent">carrierwave_processing_error:</span> <span class="pl-s"><span class="pl-pds">"</span>Cannot resize image.<span class="pl-pds">"</span></span></span>
+    <span class="pl-s"><span class="pl-ent">carrierwave_integrity_error:</span> <span class="pl-s"><span class="pl-pds">"</span>Not an image.<span class="pl-pds">"</span></span></span>
+    <span class="pl-s"><span class="pl-ent">carrierwave_download_error:</span> <span class="pl-s"><span class="pl-pds">"</span>Couldn't download image.<span class="pl-pds">"</span></span></span>
+    <span class="pl-s"><span class="pl-ent">extension_whitelist_error:</span> <span class="pl-s"><span class="pl-pds">"</span>You are not allowed to upload %{extension} files, allowed types: %{allowed_types}<span class="pl-pds">"</span></span></span>
+    <span class="pl-s"><span class="pl-ent">extension_blacklist_error:</span> <span class="pl-s"><span class="pl-pds">"</span>You are not allowed to upload %{extension} files, prohibited types: %{prohibited_types}<span class="pl-pds">"</span></span></span></pre></div>
+
+<h2><a id="user-content-large-files" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#large-files" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Large files</h2>
+
+<p>By default, CarrierWave copies an uploaded file twice, first copying the file into the cache, then
+copying the file into the store.  For large files, this can be prohibitively time consuming.</p>
+
+<p>You may change this behavior by overriding either or both of the <code>move_to_cache</code> and
+<code>move_to_store</code> methods:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">MyUploader<span class="pl-e"> &lt; CarrierWave::Uploader::Base</span></span>
+  <span class="pl-k">def</span> <span class="pl-en">move_to_cache</span>
+    <span class="pl-c1">true</span>
+  <span class="pl-k">end</span>
+
+  <span class="pl-k">def</span> <span class="pl-en">move_to_store</span>
+    <span class="pl-c1">true</span>
+  <span class="pl-k">end</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>When the <code>move_to_cache</code> and/or <code>move_to_store</code> methods return true, files will be moved (instead of copied) to the cache and store respectively.</p>
+
+<p>This has only been tested with the local filesystem store.</p>
+
+<h2><a id="user-content-skipping-activerecord-callbacks" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#skipping-activerecord-callbacks" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Skipping ActiveRecord callbacks</h2>
+
+<p>By default, mounting an uploader into an ActiveRecord model will add a few
+callbacks. For example, this code:</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User</span>
+  mount_uploader <span class="pl-c1">:avatar</span>, <span class="pl-c1">AvatarUploader</span>
+<span class="pl-k">end</span></pre></div>
+
+<p>Will add these callbacks:</p>
+
+<div class="highlight highlight-source-ruby"><pre>after_save <span class="pl-c1">:store_avatar!</span>
+before_save <span class="pl-c1">:write_avatar_identifier</span>
+after_commit <span class="pl-c1">:remove_avatar!</span>, <span class="pl-c1">on:</span> <span class="pl-c1">:destroy</span>
+after_commit <span class="pl-c1">:mark_remove_avatar_false</span>, <span class="pl-c1">on:</span> <span class="pl-c1">:update</span>
+after_save <span class="pl-c1">:store_previous_changes_for_avatar</span>
+after_commit <span class="pl-c1">:remove_previously_stored_avatar</span>, <span class="pl-c1">on:</span> <span class="pl-c1">:update</span></pre></div>
+
+<p>If you want to skip any of these callbacks (eg. you want to keep the existing
+avatar, even after uploading a new one), you can use ActiveRecord’s
+<code>skip_callback</code> method.</p>
+
+<div class="highlight highlight-source-ruby"><pre><span class="pl-k">class</span> <span class="pl-en">User</span>
+  mount_uploader <span class="pl-c1">:avatar</span>, <span class="pl-c1">AvatarUploader</span>
+  skip_callback <span class="pl-c1">:commit</span>, <span class="pl-c1">:after</span>, <span class="pl-c1">:remove_previously_stored_avatar</span>
+<span class="pl-k">end</span></pre></div>
+
+<h2><a id="user-content-contributing-to-carrierwave" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#contributing-to-carrierwave" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>Contributing to CarrierWave</h2>
+
+<p>See <a href="https://github.com/carrierwaveuploader/carrierwave/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
+
+<h2><a id="user-content-license" class="anchor" href="https://github.com/carrierwaveuploader/carrierwave#license" aria-hidden="true"><svg aria-hidden="true" class="octicon octicon-link" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M4 9h1v1h-1c-1.5 0-3-1.69-3-3.5s1.55-3.5 3-3.5h4c1.45 0 3 1.69 3 3.5 0 1.41-0.91 2.72-2 3.25v-1.16c0.58-0.45 1-1.27 1-2.09 0-1.28-1.02-2.5-2-2.5H4c-0.98 0-2 1.22-2 2.5s1 2.5 2 2.5z m9-3h-1v1h1c1 0 2 1.22 2 2.5s-1.02 2.5-2 2.5H9c-0.98 0-2-1.22-2-2.5 0-0.83 0.42-1.64 1-2.09v-1.16c-1.09 0.53-2 1.84-2 3.25 0 1.81 1.55 3.5 3 3.5h4c1.45 0 3-1.69 3-3.5s-1.5-3.5-3-3.5z"></path></svg></a>License</h2>
+
+<p>Copyright (c) 2008-2015 Jonas Nicklas</p>
+
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+</article>
+  </div>
+
+
+  </div>
+  <div class="modal-backdrop"></div>
+</div>
+
+
+    </div>
+  </div>
+
+    </div>
+
+        <div class="container site-footer-container">
+  <div class="site-footer" role="contentinfo">
+    <ul class="site-footer-links right">
+        <li><a href="https://status.github.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+      <li><a href="https://developer.github.com/" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li><a href="https://training.github.com/" data-ga-click="Footer, go to training, text:training">Training</a></li>
+      <li><a href="https://shop.github.com/" data-ga-click="Footer, go to shop, text:shop">Shop</a></li>
+        <li><a href="https://github.com/blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a href="https://github.com/about" data-ga-click="Footer, go to about, text:about">About</a></li>
+          <li><a href="https://github.com/pricing" data-ga-click="Footer, go to pricing, text:pricing">Pricing</a></li>
+
+    </ul>
+
+    <a href="https://github.com/" aria-label="Homepage" class="site-footer-mark">
+      <svg aria-hidden="true" class="octicon octicon-mark-github" height="24" role="img" title="GitHub " version="1.1" viewBox="0 0 16 16" width="24"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59 0.4 0.07 0.55-0.17 0.55-0.38 0-0.19-0.01-0.82-0.01-1.49-2.01 0.37-2.53-0.49-2.69-0.94-0.09-0.23-0.48-0.94-0.82-1.13-0.28-0.15-0.68-0.52-0.01-0.53 0.63-0.01 1.08 0.58 1.23 0.82 0.72 1.21 1.87 0.87 2.33 0.66 0.07-0.52 0.28-0.87 0.51-1.07-1.78-0.2-3.64-0.89-3.64-3.95 0-0.87 0.31-1.59 0.82-2.15-0.08-0.2-0.36-1.02 0.08-2.12 0 0 0.67-0.21 2.2 0.82 0.64-0.18 1.32-0.27 2-0.27 0.68 0 1.36 0.09 2 0.27 1.53-1.04 2.2-0.82 2.2-0.82 0.44 1.1 0.16 1.92 0.08 2.12 0.51 0.56 0.82 1.27 0.82 2.15 0 3.07-1.87 3.75-3.65 3.95 0.29 0.25 0.54 0.73 0.54 1.48 0 1.07-0.01 1.93-0.01 2.2 0 0.21 0.15 0.46 0.55 0.38C13.71 14.53 16 11.53 16 8 16 3.58 12.42 0 8 0z"></path></svg>
+</a>
+    <ul class="site-footer-links">
+      <li>© 2016 <span title="0.11996s from github-fe156-cp1-prd.iad.github.net">GitHub</span>, Inc.</li>
+        <li><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
+        <li><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
+        <li><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
+        <li><a href="https://github.com/contact" data-ga-click="Footer, go to contact, text:contact">Contact</a></li>
+        <li><a href="https://help.github.com/" data-ga-click="Footer, go to help, text:help">Help</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+    
+    
+    
+
+    <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <button type="button" class="flash-close js-flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+        <svg aria-hidden="true" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+      </button>
+      Something went wrong with that request. Please try again.
+    </div>
+
+
+      
+      <script crossorigin="anonymous" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/frameworks-6ca2341c3a095a76515ea4b68fefbd6b078adf1bbedad254b6a5a72f0e396b6d.js"></script>
+      <script async="async" crossorigin="anonymous" src="./carrierwaveuploader_carrierwave_ Classier solution for file uploads for Rails, Sinatra and other Ruby web frameworks_files/github-8fccd0d3ef828b6ecd1fea915fefe7a682717f1fd6c0332b3c9cd6789a9083da.js"></script>
+      
+      
+      
+    <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
+      <svg aria-hidden="true" class="octicon octicon-alert" height="16" role="img" version="1.1" viewBox="0 0 16 16" width="16"><path d="M15.72 12.5l-6.85-11.98C8.69 0.21 8.36 0.02 8 0.02s-0.69 0.19-0.87 0.5l-6.85 11.98c-0.18 0.31-0.18 0.69 0 1C0.47 13.81 0.8 14 1.15 14h13.7c0.36 0 0.69-0.19 0.86-0.5S15.89 12.81 15.72 12.5zM9 12H7V10h2V12zM9 9H7V5h2V9z"></path></svg>
+      <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+      <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    </div>
+    <div class="facebox" id="facebox" style="display:none;">
+  <div class="facebox-popup">
+    <div class="facebox-content" role="dialog" aria-labelledby="facebox-header" aria-describedby="facebox-description">
+    </div>
+    <button type="button" class="facebox-close js-facebox-close" aria-label="Close modal">
+      <svg aria-hidden="true" class="octicon octicon-x" height="16" role="img" version="1.1" viewBox="0 0 12 16" width="12"><path d="M7.48 8l3.75 3.75-1.48 1.48-3.75-3.75-3.75 3.75-1.48-1.48 3.75-3.75L0.77 4.25l1.48-1.48 3.75 3.75 3.75-3.75 1.48 1.48-3.75 3.75z"></path></svg>
+    </button>
+  </div>
+</div>
+
+  
+
+
+</body></html>
