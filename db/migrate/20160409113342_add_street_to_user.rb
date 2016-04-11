@@ -5,7 +5,8 @@ class AddStreetToUser < ActiveRecord::Migration
     add_column :users, :state ,:string
     add_column :users, :country, :string
     add_column :users, :zipcode , :integer
-    add_column :users, :profile , :string
+    add_column :users, :image , :string
+   
   end
 end
 

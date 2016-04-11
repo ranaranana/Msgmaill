@@ -1,0 +1,31 @@
+<table>
+  <tr>
+    <th>From</th>
+    <th>Subject</th>
+    
+    <th>body</th>
+    <th>file</th>
+
+    <th colspan="2"></th>
+  </tr>
+  <% @message.each do |message|%>
+
+    <tr>
+      <td><%#= message.to %></td>
+      <td><%= message.from %></td>
+       <td><%= message.subject %></td>
+       <td><%= message.body[0..10].to_s.html_safe %></td>
+       <td><%#= message.body.to_s.html_safe %></td>
+      <td><%= link_to "Download Attachment", message.attachment_url %></td>
+      <td><%= link_to"restore", message_restore_path(message)%></td>
+       <td><%= link_to 'remvoe',  message_remove_path(message),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+       
+        <td><%#= button_to "Delete",  message, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{message.attachment}?" %></td>
+      <td><%#= message.attachment_url %></td>
+      <td><%= link_to 'view', message_path(message) %></td>
+     
+    </tr>
+  <% end %>
+</table>

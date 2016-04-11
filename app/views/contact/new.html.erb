@@ -1,6 +1,17 @@
 <h1>
     <i>Create new Contact</i>
 </h1>
+<% if @contact.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this user from being saved:</h2>
+    <ul>
+    <% @contact.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+     
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
 <%= form_for :contact ,url:  contact_index_path do |f| %>
     <p>
 	 	<div calss = "field">
@@ -23,7 +34,7 @@
  					<%= f.label :mobile%>
  					<%= f.text_field :mobile%>
  				</div></p>
- 				<%#= f.hidden_field :user_id, value: current_user.id %>
+ 				<%= f.hidden_field :user_id, value: current_user.id %>
  				<p><div class = "actions"%>
  					<%= f.submit "Create contact"%>
  				</div></p>

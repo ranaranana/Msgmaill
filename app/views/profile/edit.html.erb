@@ -1,5 +1,8 @@
 <h1>Edit Profile</h1>
 <%= form_for @profile ,url:profiles_path(@profile), method: :put  do |f| %>
+<div class = "field"%>
+	
+</div>
 <p>
 	<div class="field">
 		<%=f.label :Firstname%>
@@ -14,7 +17,7 @@
 </p>
 <p>
 	<div class = "field">
-		<%=f.label :Username %>
+		<%=f.label :Username %>`
 		<%=f.text_field :username %>
 
 	</div>
@@ -52,7 +55,7 @@
 <p>
 	<div class ="field">
 		<%=f.label :Profile%>
-		<%=f.file_field :profile%>
+		<%=f.file_field :image%>
 	</div>
 </p>
 <p>

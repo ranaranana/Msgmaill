@@ -1,0 +1,47 @@
+<p>
+	<strong>image</strong>
+	<%= image_tag @profile.image_url.to_s,eight:"100", width: "100" if @profile.image.present? %><br/>
+	<%#= image_tag @user.image_url.to_s, height:"100", width: "100" if @user.image.present? %>
+
+</p>
+<p>
+
+	<strong>Firstname:</strong>
+	<%= @profile.firstname%>
+</p>
+
+<p>
+
+	<strong>Lastname:</strong>
+	<%= @profile.lastname%>
+</p>
+<p>
+
+	<strong>Username:</strong>
+	<%= @profile.username%>
+</p>
+
+<p>
+
+	<strong>Street:</strong>
+	<%= @profile.street%>
+</p>
+<p>
+	<strong>City:</strong>
+	<%= @profile.city%>
+</p>
+<p>
+	<strong>satate</strong>
+	<%=@profile.state%>
+</p>
+<p>
+	<strong>country</strong>
+	<%=@profile.country%>
+</p>
+<p>
+	<strong>Zipcode</strong>
+	<%=@profile.zipcode%>
+</p>
+
+
+<%=link_to "back",  home_index_path%>

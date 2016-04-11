@@ -1,5 +1,5 @@
 <h1><i><b>List Of Contacts</b></i></h1>
-
+<%= will_paginate @contacts%>
 <table>
 	<tr>
 	<th>FirstName</th>
@@ -19,6 +19,8 @@
  <%=link_to "delete",contact ,method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
  </tr>
+ 
+
  <%end%>
 </table>
 <%= link_to"Add new contact",new_contact_path%>

@@ -1,8 +1,10 @@
 class User < ActiveRecord::Base
 	has_many :messages
 	has_many :contacts
+  has_many :trashs
 	#has_many :key => "value",messages
 	attr_accessor :login
+  mount_uploader :image, ImageUploader
 	#devise :registerable, :confirmable
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable

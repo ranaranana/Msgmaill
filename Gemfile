@@ -47,6 +47,7 @@ group :development, :test do
   gem "ckeditor"
   gem 'mini_magick'
   gem 'country_select'
+  gem 'will_paginate', '~> 3.0'
   
 end
 

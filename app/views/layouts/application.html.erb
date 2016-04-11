@@ -8,6 +8,8 @@
 </head>
 <body>
 <% if signed_in? %>
+<%= image_tag current_user.image_url.to_s%>
+<%#= image_tag current_user.image_url.to_s,eight:"100", width: "100" if current_user.image.present? %>
 
  <%#= link_to current_user.username%>
  <%= link_to current_user.username, edit_profile_path %>
@@ -17,6 +19,7 @@
 <%else%>
 <%= link_to 'Sign up ' ,new_user_registration_path %> |
 <%= link_to 'Login' , new_user_session_path %>
+
 	
 
 <%end%>	

@@ -1,7 +1,10 @@
 class ContactController < ApplicationController
-before_action :authenticate_user!
+#before_action :authenticate_user!
   def index
-  	@contacts =current_user.contacts
+    @contacts =current_user.contacts.paginate(page: params[:page],per_page:  5)
+  	#@contacts =current_user.contacts.page(params[:page],per_page:  5)
+     #@products = Product.order("name").page(params[:page])
+    #@product = Product.all.paginate(page: params[:page],per_page:  5)
   	
   end
 
@@ -10,6 +13,7 @@ before_action :authenticate_user!
   end
    def  create
    	   @contact =Contact.new(contact_params)
+       
    	 if @contact.save
    	   redirect_to contact_index_path
      else
