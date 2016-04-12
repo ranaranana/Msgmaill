@@ -1,0 +1,5 @@
+<h1> Userpage_Records</h1>
+  <%= form_for @message ,url: message_page_path do |f| %>
+  <%=f.label :page%>
+  <%=f.text_field :page %>
+  <%=f.submit "submit"%>

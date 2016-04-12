@@ -1,5 +1,30 @@
+
+<%#= search_form_for @q do |f|%>
+ <%#= f.label :body_cont %>
+  <%#= f.search_field :body_cont %>
+  <%#end%>
+<%= search_form_for @search , url:message_index_path do |f| %>
+  <div class="field">
+    <%= f.label :subject_or_body_cont, "Name contains" %>
+    <%= f.text_field :subject_or_body_cont %>
+  </div>
+  <div class="actions"><%= f.submit "Search" %></div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
 <h1> VIEW TO ALL MAILS </h1>
 <table>
+<%= will_paginate @message%>
+
   <!-- <tr>
     <th>TO</th>
     <th>Subject</th>

@@ -2,7 +2,10 @@ class MessageController < ApplicationController
 
  before_action :authenticate_user!
  def index
-    @message = Message.where(from: current_user.email)
+
+      @message = Message.where(from: current_user.email,status: nil).paginate(page: params[:page],per_page:  2)
+    @search = Message.ransack(params[:q])
+    @message = @search.result.paginate(page: params[:page],per_page:  2)
 
 end
 def new
@@ -31,19 +34,24 @@ def destroy
 end
 def get_inbox
   p"========================"
-  p @message = Message.where(to: current_user.email ,status: nil)
+  p @message = Message.where(to: current_user.email ,status: nil).paginate(page: params[:page],per_page:  5)
+  @q= Message.ransack(params[:q])
+  @message = @q.result
+  #@message = Message.where(from: current_user.email ,status: nil)
   p params
 
 end
 
 def trash
  @message = Message.where(to: current_user.email ,status: 'deleted')
+ @message = Message.where(from: current_user.email, status: 'deleted')
 
 end
 def  restore
   @message = Message.find(params[:id])
   @message.update(status: nil)
-  redirect_to  get_inbox_path
+  #redirect_to  get_inbox_path
+  redirect_to root_path
 
 end
 
@@ -54,6 +62,10 @@ def remove
   @message.destroy
  redirect_to  message_trash_path
 end
+# def page
+#   @message = Message.find(params[:id])
+
+#   end
 private
 def message_params
  params.require(:message).permit(:to, :from, :subject, :body, :attachment)

@@ -49,5 +49,7 @@ group :development, :test do
   gem 'country_select'
   gem 'will_paginate', '~> 3.0'
   
+  gem 'ransack' 
+  
 end
 

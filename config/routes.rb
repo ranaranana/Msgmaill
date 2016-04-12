@@ -10,23 +10,24 @@ Rails.application.routes.draw do
   resources :contact
   get "index/profile" =>"profile#index"
   get "edit/profile" => "profile#edit"
-  put "/profiles" =>"profile#update"
-  #resources :profile ,only:[:edit,:update]
-   # => post 'user/review' => 'cart#review_create'
-  get "home/index" => "home#index"
-  get "get_inbox" => "message#get_inbox"
-   get "/trash" => "message#trash", as: :message_trash
-  #delete 'message/remove/:id' => 'messages#remove', as: 'message_remove'
+    put "/profiles" =>"profile#update"
+    #resources :profile ,only:[:edit,:update]
+     # => post 'user/review' => 'cart#review_create'
+    get "home/index" => "home#index"
+    get "get_inbox" => "message#get_inbox"
+     get "/trash" => "message#trash", as: :message_trash
+    #delete 'message/remove/:id' => 'messages#remove', as: 'message_remove'
 
-  delete 'message/remove/:id' => 'message#remove', as: 'message_remove'
-    get 'message/restore/:id' => 'message#restore', as: 'message_restore'
-    root 'home#index'
+     delete 'message/remove/:id' => 'message#remove', as: 'message_remove'
+      get 'message/restore/:id' => 'message#restore', as: 'message_restore'
+      get 'message/page/:id' => 'message#page', as:'message_page'
+      root 'home#index'
 
-  # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    # Example of regular route:
+    #   get 'products/:id' => 'catalog#view'
 
-  # Example of named route that can be invoked with purchase_url(id: product.id)
-  #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
+    # Example of named route that can be invoked with purchase_url(id: product.id)
+    #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
