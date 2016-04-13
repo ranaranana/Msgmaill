@@ -15,8 +15,9 @@
 		<%= image_tag current_user.image_url.to_s%>
 	<%else%>
 		<canvas width="80" height="80" data-jdenticon-hash="<%= jdenticon%>"></canvas>
-	<%end%>
+	<%end%>		                                                                                                                  
 <%#= image_tag current_user.image_url.to_s,eight:"100", width: "100" if current_user.image.present? %>
+                                                                                       
 
  <%#= link_to current_user.username%>
  <%= link_to current_user.username, edit_profile_path %>

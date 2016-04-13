@@ -1,5 +1,18 @@
 <h1> Userpage_Records</h1>
-  <%= form_for @message ,url: message_page_path do |f| %>
-  <%=f.label :page%>
-  <%=f.text_field :page %>
+<
+  <%=f.label :page_count%>
+  <%=f.text_field :page_count %>
   <%=f.submit "submit"%>
+<!-- def index
+
+      @message = Message.where(from: current_user.email,status: nil).paginate(page: params[:page],per_page:  session[:page_count])
+    @search = Message.ransack(params[:q])
+    @message = @search.result.paginate(page: params[:page],per_page:  session[:page_count])
+
+end -->
+
+<!-- 
+def page_count
+  session[:page_count] = params[:page_count] == '' 10 : params[:page_count]
+end -->
+<!-- before_action :page_count -->

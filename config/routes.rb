@@ -16,11 +16,12 @@ Rails.application.routes.draw do
     get "home/index" => "home#index"
     get "get_inbox" => "message#get_inbox"
      get "/trash" => "message#trash", as: :message_trash
+     get "/favorite" => "message#favorite_msg", as: :message_favorite
     #delete 'message/remove/:id' => 'messages#remove', as: 'message_remove'
 
      delete 'message/remove/:id' => 'message#remove', as: 'message_remove'
       get 'message/restore/:id' => 'message#restore', as: 'message_restore'
-      get 'message/page/:id' => 'message#page', as:'message_page'
+      get 'message/page_count/:id' => 'message#page_count', as:'message_page'
       root 'home#index'
 
     # Example of regular route:
