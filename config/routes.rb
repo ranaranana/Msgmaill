@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
  
 
+
+  resources :cals
+  resources :events
   mount Ckeditor::Engine => '/ckeditor'
   # resources :messages ,only: [:update]
    
@@ -17,6 +20,7 @@ Rails.application.routes.draw do
     get "get_inbox" => "message#get_inbox"
      get "/trash" => "message#trash", as: :message_trash
      get "/favorite" => "message#favorite_msg", as: :message_favorite
+     get'/favorite_update' => "message#favorite_update"
     #delete 'message/remove/:id' => 'messages#remove', as: 'message_remove'
 
      delete 'message/remove/:id' => 'message#remove', as: 'message_remove'
@@ -24,52 +28,7 @@ Rails.application.routes.draw do
       get 'message/page_count/:id' => 'message#page_count', as:'message_page'
       root 'home#index'
 
-    # Example of regular route:
-    #   get 'products/:id' => 'catalog#view'
-
-    # Example of named route that can be invoked with purchase_url(id: product.id)
-    #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
-
-  # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
-  # Example resource route with options:
-  #   resources :products do
-  #     member do
-  #       get 'short'
-  #       post 'toggle'
-  #     end
-  #
-  #     collection do
-  #       get 'sold'
-  #     end
-  #   end
-
-  # Example resource route with sub-resources:
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
-
-  # Example resource route with more complex sub-resources:
-  #   resources :products do
-  #     resources :comments
-  #     resources :sales do
-  #       get 'recent', on: :collection
-  #     end
-  #   end
-
-  # Example resource route with concerns:
-  #   concern :toggleable do
-  #     post 'toggle'
-  #   end
-  #   resources :posts, concerns: :toggleable
-  #   resources :photos, concerns: :toggleable
-
-  # Example resource route within a namespace:
-  #   namespace :admin do
-  #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+     #SETTING PAGE
+      get 'setting/index' , to: 'settings#index'
+      post 'setting/create_inboxlimit', to:'settings#create_inboxlimit'
 end

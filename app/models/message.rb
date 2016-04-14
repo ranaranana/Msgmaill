@@ -9,3 +9,4 @@ class Message < ActiveRecord::Base
 		paginate(:all, :per_page => 25, :conditions => ["published = ?", true])
 	end
 end
+	

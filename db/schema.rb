@@ -11,7 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160411143939) do
+ActiveRecord::Schema.define(version: 20160414135802) do
+
+  create_table "calenders", force: :cascade do |t|
+    t.string   "auther"
+    t.datetime "published"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cals", force: :cascade do |t|
+    t.string   "auther"
+    t.date     "published"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "ckeditor_assets", force: :cascade do |t|
     t.string   "data_file_name",               null: false
@@ -38,6 +54,15 @@ ActiveRecord::Schema.define(version: 20160411143939) do
     t.integer  "user_id"
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "mailboxer_conversation_opt_outs", force: :cascade do |t|
@@ -101,7 +126,15 @@ ActiveRecord::Schema.define(version: 20160411143939) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string   "attachment"
+    t.string   "favorite"
     t.string   "status"
+  end
+
+  create_table "settings", force: :cascade do |t|
+    t.integer  "inboxlimit"
+    t.string   "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "trashes", force: :cascade do |t|

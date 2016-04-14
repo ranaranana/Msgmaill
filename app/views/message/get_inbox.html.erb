@@ -11,7 +11,7 @@
 
 <table>
   <tr>
-  <%#= will_paginate @message%>
+  <%= will_paginate @message%>
 
     <th>From</th>
     <th>Subject</th>
@@ -30,7 +30,7 @@
        <td><%= message.body[0..10].to_s.html_safe %></td>
        <td><%#= message.body.to_s.html_safe %></td>
       <td><%= link_to "Download Attachment", message.attachment_url %></td>
-      <td><%= link_to "Favorite" , message,method: :delete %>
+      <td><%= link_to "Favorite" , favorite_update_path(id: message) %>
         <td><%= button_to "Delete",  message, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{message.attachment}?" %></td>
       <td><%#= message.attachment_url %></td>
       <td><%= link_to 'view', message_path(message) %></td>

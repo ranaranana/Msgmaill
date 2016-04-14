@@ -2,9 +2,7 @@ class ContactController < ApplicationController
 #before_action :authenticate_user!
   def index
     @contacts =current_user.contacts.paginate(page: params[:page],per_page:  5)
-  	#@contacts =current_user.contacts.page(params[:page],per_page:  5)
-     #@products = Product.order("name").page(params[:page])
-    #@product = Product.all.paginate(page: params[:page],per_page:  5)
+  	
   	
   end
 

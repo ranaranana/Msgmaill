@@ -13,7 +13,7 @@
        <td><%#= message.body.to_s.html_safe %></td>
       <td><%= link_to "Download Attachment", message.attachment_url %></td>
       <td><%#= link_to"restore", message_restore_path(message)%></td>
-       <td><%= link_to 'remove',  message_remove_path(message),
+       <td><%#= link_to 'remove',  message_remove_path(message),
               method: :delete,
               data: { confirm: 'Are you sure?' } %></td>
        

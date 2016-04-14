@@ -50,6 +50,7 @@ group :development, :test do
   gem 'will_paginate', '~> 3.0'
   
   gem 'ransack' 
-  
+ gem 'jquery-ui-rails'
+ gem 'fullcalendar-rails'
 end
 
