@@ -16,6 +16,7 @@
    <%= f.text_field :from_email,value: current_user.email, readonly: :true%><br/>
    <%= f.hidden_field :from, value:current_user.email%>
  </div>
+ <%= f.hidden_field :user_id, value:current_user.id%>
  
  <!--  <p>
     <div class = "field">

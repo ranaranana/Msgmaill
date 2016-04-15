@@ -1,8 +1,4 @@
 
-<%#= search_form_for @q do |f|%>
- <%#= f.label :body_cont %>
-  <%#= f.search_field :body_cont %>
-  <%#end%>
 <%= search_form_for @search , url:message_index_path do |f| %>
   <div class="field">
     <%= f.label :subject_or_body_cont, "Name contains" %>
@@ -25,6 +21,7 @@
 <table>
 <%= will_paginate @message%>
 
+
   <!-- <tr>
     <th>TO</th>
     <th>Subject</th>
@@ -46,8 +43,8 @@
        <td><%= link_to "Download Attachment", message.attachment_url %></td>
 
         <td><%=link_to "Delete",message, method: :delete, class: "btn btn-danger", confirm: "Are you sure that you wish to delete #{message.attachment}?" %></td>
-      <td><%= link_to 'view', message_path(message) %></td>
-     
+      <td><%= link_to 'view', message_path(message)%></td>
+     <%#= current_user.mailbox.inbox.unread.count %>
     </tr>
   <% end %>
 </table>

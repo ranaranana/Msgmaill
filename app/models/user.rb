@@ -3,6 +3,7 @@ class User < ActiveRecord::Base
 	has_many :contacts
   has_many :trashs
   has_many :events
+  has_many :settings
 	#has_many :key => "value",messages
 	attr_accessor :login
   mount_uploader :image, ImageUploader

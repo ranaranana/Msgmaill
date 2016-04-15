@@ -3,6 +3,7 @@ class MessageController < ApplicationController
 
  before_action :authenticate_user!
  def index
+      
        @message = Message.where(from: current_user.email,status: nil).paginate(page: params[:page],per_page:  2)
         @search = Message.ransack(params[:q])
         @message = @search.result.paginate(page: params[:page],per_page:  2)
@@ -35,17 +36,20 @@ class MessageController < ApplicationController
     end
 
     def get_inbox
-          p"========================"
-          p @message = Message.where(to: current_user.email ,status: nil).paginate(page: params[:page],per_page:  5)
-          @q= Message.ransack(params[:q])
-          @message = @q.result.paginate(page: params[:page],per_page:  5)
-          p params
 
+          p"========================"
+          @inboxlimit = current_user.settings.pluck(:inboxlimit).first
+          p @message = Message.where(to: current_user.email ,status: nil).paginate(page: params[:page],per_page:  @inboxlimit)
+          @q= Message.ransack(params[:q])
+          @message = @q.result.paginate(page: params[:page],per_page:  @inboxlimit)
+
+          @count_inbox =current_user.settings.count
+          
        end
 
     def trash
             @message = Message.where(to: current_user.email ,status: 'deleted')
-            @message = Message.where(from: current_user.email,status:  'deleted')
+          @message = Message.where(from: current_user.email,status:  'deleted')
 
     end
 

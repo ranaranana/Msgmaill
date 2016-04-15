@@ -2,8 +2,6 @@ Rails.application.routes.draw do
  
 
 
-  resources :cals
-  resources :events
   mount Ckeditor::Engine => '/ckeditor'
   # resources :messages ,only: [:update]
    
@@ -17,6 +15,7 @@ Rails.application.routes.draw do
     #resources :profile ,only:[:edit,:update]
      # => post 'user/review' => 'cart#review_create'
     get "home/index" => "home#index"
+    get "/calender/home" => "home#calender"
     get "get_inbox" => "message#get_inbox"
      get "/trash" => "message#trash", as: :message_trash
      get "/favorite" => "message#favorite_msg", as: :message_favorite
@@ -30,5 +29,5 @@ Rails.application.routes.draw do
 
      #SETTING PAGE
       get 'setting/index' , to: 'settings#index'
-      post 'setting/create_inboxlimit', to:'settings#create_inboxlimit'
+      put '/setting/inboxlimit_update', to:'settings#inboxlimit_update'
 end

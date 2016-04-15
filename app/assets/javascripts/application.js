@@ -12,8 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require_tree .
 //= require turbolinks
-
-//= require jquery-ui
-//= require fullcalendar
 //= require ckeditor/init
+//= require moment
+//= require fullcalendar
+
+

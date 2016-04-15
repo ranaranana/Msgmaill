@@ -51,6 +51,7 @@ group :development, :test do
   
   gem 'ransack' 
  gem 'jquery-ui-rails'
- gem 'fullcalendar-rails'
+gem 'fullcalendar-rails'
+gem 'momentjs-rails'
 end
 
