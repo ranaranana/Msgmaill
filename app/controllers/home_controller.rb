@@ -3,9 +3,13 @@ class HomeController < ApplicationController
 	def index
  
 	@count = current_user.contacts.count
-   @count_inbox = Message.where(to: current_user.email ,status: nil).count
-	#@count_inbox =current_user.settings.count
-	#@count_send = current_user.messages.count
+  	@trashcounts = current_user.messages.where(status: "deleted").count
+		  @favorite_count = Message.where(from:current_user.email ,favorite: 'true').count
+		  			@send_mail = Message.where(from: current_user.email,status: nil).count
+
+            @inboxcounts =  Message.where(to: current_user.email ,status: nil).count
+
+
 	end
 	def new
 

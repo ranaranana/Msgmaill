@@ -7,6 +7,9 @@ class MessageController < ApplicationController
        @message = Message.where(from: current_user.email,status: nil).paginate(page: params[:page],per_page:  2)
         @search = Message.ransack(params[:q])
         @message = @search.result.paginate(page: params[:page],per_page:  2)
+        @send_mail = Message.where(from: current_user.email,status: nil).count
+
+
   end
 
  def new
@@ -42,14 +45,19 @@ class MessageController < ApplicationController
           p @message = Message.where(to: current_user.email ,status: nil).paginate(page: params[:page],per_page:  @inboxlimit)
           @q= Message.ransack(params[:q])
           @message = @q.result.paginate(page: params[:page],per_page:  @inboxlimit)
+         @inboxcounts =  Message.where(to: current_user.email ,status: nil).count
 
-          @count_inbox =current_user.settings.count
+
+
+            
+          
           
        end
 
     def trash
-            @message = Message.where(to: current_user.email ,status: 'deleted')
-          @message = Message.where(from: current_user.email,status:  'deleted')
+            @message = Message.where(to: current_user.id ,status: 'deleted')
+          # => @message = Message.where(from: current_user.id,status:  'deleted')
+        @trashcounts = current_user.messages.where(status: "deleted").count
 
     end
 
@@ -76,6 +84,7 @@ class MessageController < ApplicationController
               p "==========================="
               p @message
               p "_________________________________"
+             @favorite_count = Message.where(from:current_user.email ,favorite: 'true').count
     end
   
   def favorite_update

@@ -23,3 +23,10 @@ test:
 production:
   <<: *default
   database: db/production.sqlite3
+# development:
+#   adapter: postgresql
+#   encoding: unicode
+#   database: sample_database
+#   pool: 5
+#   username: postgres
+#   password: Password@123!

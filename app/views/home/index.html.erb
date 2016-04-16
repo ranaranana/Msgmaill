@@ -1,15 +1,24 @@
 <h1>WELCOME TO HOME PAGE</h1> 
 <%= link_to "Message",new_message_path%>
-<%= link_to "Sentmail(#{@count_send})" ,message_index_path %>
-<%= link_to "Inbox(#{@count_inbox})" , get_inbox_path %>
+<%= link_to "Sentmail(#{@send_mail})" ,message_index_path %>
+<%= link_to "Inbox(#{@inboxcounts})" , get_inbox_path %>
 <%= link_to "Contact(#{@count})" , contact_index_path() %>
-<%= link_to "trashbin", message_trash_path %>
-<%= link_to "Favorite", message_favorite_path %>
+<%= link_to "trashbin(#{@trashcounts})", message_trash_path %>
+<%= link_to "Favorite(#{@favorite_count})", message_favorite_path %>
 <%= link_to "Settings" , setting_index_path%>
 <%= link_to "EVENTS", calender_home_path%>
+<%#= line_chart Message.all.group_by(&:created_at).count %>
+<%#= column_chart Message.group_by_hour_of_day(:created_at, format: "%l %P").count %>
 
 
 
+<%#= line_chart User.group_by_day(:created_at).count %>
+
+ <%#= line_chart @user. { |goal|
+    {name: goal.username, data: goal.feats.group_by_week(:created_at).count}
+} %>
+<%#= line_chart message.group(:user_id).group_by_week(:created_at).count %>
 
 
- 
+  <!-- Line Chart - Multiple Series -->
+ <div id="container" style="height: 400px"></div>
